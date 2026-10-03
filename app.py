@@ -21,6 +21,9 @@ st.markdown(
     """
 <style>
 .block-container{max-width:720px;padding-top:1.2rem}
+.timer-banner{position:sticky;top:.35rem;z-index:9999;text-align:center;font-weight:700;font-size:1.18rem;padding:.65rem 1rem;margin:0 0 1rem;background:rgba(255,255,255,.98);border:2px solid #1B4965;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
+.timer-banner strong{font-size:1.35rem;margin-left:.25rem}
+@media(max-width:640px){.timer-banner{top:.2rem;font-size:1.05rem;padding:.55rem .75rem}.timer-banner strong{font-size:1.2rem}}
 .lvl{border-radius:16px;padding:1.4rem;text-align:center;margin:1rem 0;border:1px solid #d5dee6}
 .lvl b{font-size:2.7rem;display:block}
 .passage{border-left:4px solid #1B4965;padding:.9rem 1rem;border-radius:6px;margin-bottom:.9rem}
@@ -34,50 +37,17 @@ S = st.session_state
 
 
 # ----------------------------- timer -----------------------------
+@st.fragment(run_every=1)
 def show_timer():
-    """Display a live client-side countdown and reload when time expires.
-
-    The server also checks the hard deadline on every interaction, so the
-    client-side timer is for visibility/UX rather than scoring logic.
-    """
+    """Prominent live countdown that stays below Streamlit's top toolbar."""
     remaining = max(0, int(S.started + sc.MAX_MINUTES * 60 - time.time()))
-    components.html(
-        f"""
-        <div id="timer" style="
-            text-align:right;
-            font-weight:700;
-            font-family:Arial,sans-serif;
-            font-size:16px;
-            padding:2px 0 6px 0;
-            color:#ffffff;
-        "></div>
-        <script>
-        let remaining = {remaining};
-        const el = document.getElementById('timer');
-        function render() {{
-            const mins = Math.floor(Math.max(remaining,0) / 60);
-            const secs = Math.max(remaining,0) % 60;
-            el.textContent = `⏱ Time remaining: ${{String(mins).padStart(2,'0')}}:${{String(secs).padStart(2,'0')}}`;
-            if (remaining <= 0) {{
-                el.textContent = '⏱ Time is up — submitting your test...';
-                clearInterval(interval);
-                setTimeout(() => {{
-                    try {{
-                        window.top.location.href = window.top.location.href;
-                    }} catch (e) {{
-                        window.location.reload();
-                    }}
-                }}, 400);
-            }}
-            remaining -= 1;
-        }}
-        render();
-        const interval = setInterval(render, 1000);
-        </script>
-        """,
-        height=38,
-        scrolling=False,
+    mins, secs = divmod(remaining, 60)
+    st.markdown(
+        f"""<div class="timer-banner">⏱ Time remaining: <strong>{mins:02d}:{secs:02d}</strong></div>""",
+        unsafe_allow_html=True,
     )
+    if remaining <= 0:
+        st.rerun()
 
 
 def start():
