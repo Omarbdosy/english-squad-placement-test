@@ -1,106 +1,67 @@
-import hmac
+import base64
 import html
+import hmac
+import os
 import random
 import time
 from datetime import datetime
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
-import streamlit.components.v1 as components
 
 import scoring as sc
 import storage as store
 
-st.set_page_config(
-    page_title="English Squad Placement Test",
-    page_icon="📘",
-    layout="centered",
-)
+st.set_page_config(page_title="English Squad Placement Test", page_icon="📘", layout="centered")
+
+ROOT = Path(os.path.dirname(os.path.abspath(__file__)))
+S = st.session_state
 
 st.markdown(
     """
 <style>
-.block-container{max-width:720px;padding-top:1.2rem}
-.timer-card{width:100%;box-sizing:border-box;text-align:center;font-weight:800;font-size:1.25rem;padding:.8rem 1rem;margin:0 0 1.1rem;background:#ffffff;color:#14232F;border:3px solid #1B4965;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
-.timer-card .time{font-size:1.7rem;letter-spacing:.05em;margin-left:.35rem}
+.block-container{max-width:740px;padding-top:1rem;padding-bottom:2.5rem}
+.timer-card{width:100%;box-sizing:border-box;text-align:center;font-weight:900;padding:1rem .8rem;margin:0 0 1.1rem;background:#fff;color:#14232F;border:4px solid #1B4965;border-radius:16px;box-shadow:0 5px 16px rgba(0,0,0,.20)}
+.timer-card span{display:block;font-size:.82rem;letter-spacing:.16em;margin-bottom:.2rem}
+.timer-card strong{display:block;font-size:2.25rem;line-height:1.05;letter-spacing:.08em}
 .lvl{border-radius:16px;padding:1.4rem;text-align:center;margin:1rem 0;border:1px solid #d5dee6}
-.lvl b{font-size:2.7rem;display:block}
-.passage{border-left:4px solid #1B4965;padding:.9rem 1rem;border-radius:6px;margin-bottom:.9rem}
-.feedback{border:1px solid #d5dee6;border-radius:14px;padding:1rem;margin-top:1rem}
-.feedback h3{margin-top:0}
+.lvl b{font-size:2.7rem;display:block;margin-top:.2rem}
+.passage{background:#fff;border-left:4px solid #1B4965;padding:.95rem 1rem;border-radius:8px;margin-bottom:.9rem;line-height:1.65;color:#14232F}
+.feedback{border:1px solid #d5dee6;border-radius:14px;padding:1rem;margin-top:.8rem;background:#fff}
+.small-note{font-size:.9rem;opacity:.82}
 footer,#MainMenu{visibility:hidden}
-@media(max-width:640px){.timer-card{font-size:1.05rem;padding:.7rem .75rem}.timer-card .time{font-size:1.45rem}}
+@media(max-width:640px){.timer-card{padding:.8rem .65rem}.timer-card span{font-size:.72rem}.timer-card strong{font-size:1.9rem}.block-container{padding-left:.75rem;padding-right:.75rem}}
 </style>
 """,
     unsafe_allow_html=True,
 )
 
-S = st.session_state
 
-
-# ----------------------------- timer -----------------------------
+@st.fragment(run_every=1)
 def show_timer():
-    """Visible client-side countdown; server-side checks enforce the 40-minute limit."""
+    if "started" not in S:
+        return
     remaining = max(0, int(S.started + sc.MAX_MINUTES * 60 - time.time()))
-    components.html(
-        f"""
-        <style>
-          html, body {{ margin: 0; padding: 0; background: transparent; }}
-          .timer-card {{
-            width: 100%; box-sizing: border-box; text-align: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-weight: 800; font-size: 20px; padding: 12px 10px;
-            background: #ffffff; color: #14232F;
-            border: 3px solid #1B4965; border-radius: 14px;
-            box-shadow: 0 4px 14px rgba(0,0,0,.18);
-          }}
-          .timer-card .time {{ font-size: 28px; letter-spacing: .05em; margin-left: 6px; }}
-          @media(max-width:640px) {{
-            .timer-card {{ font-size: 17px; padding: 11px 8px; }}
-            .timer-card .time {{ font-size: 24px; }}
-          }}
-        </style>
-        <div class="timer-card">⏱ Time remaining:
-          <span id="time" class="time">--:--</span>
-        </div>
-        <script>
-          let remaining = {remaining};
-          const el = document.getElementById('time');
-          function render() {{
-            const m = Math.floor(remaining / 60);
-            const sec = remaining % 60;
-            el.textContent = String(m).padStart(2,'0') + ':' + String(sec).padStart(2,'0');
-            remaining = Math.max(0, remaining - 1);
-          }}
-          render();
-          setInterval(render, 1000);
-        </script>
-        """,
-        height=82,
-        scrolling=False,
+    mins, secs = divmod(remaining, 60)
+    st.markdown(
+        f"<div class='timer-card'>⏱ <span>TIME REMAINING</span><strong>{mins:02d}:{secs:02d}</strong></div>",
+        unsafe_allow_html=True,
     )
+    if remaining <= 0:
+        S.stage = "done"
+        st.rerun()
 
 
 def start():
     st.title("English Squad Placement Test")
-    st.write(
-        "Grammar, vocabulary and reading. Up to 40 minutes. "
-        "Every answer is final."
-    )
+    st.write("Grammar, vocabulary and reading. Up to 40 minutes. Every answer is final.")
     with st.form("start"):
         name = st.text_input("Full name")
-        phone = st.text_input(
-            "WhatsApp number",
-            placeholder="+20 100 000 0000",
-        )
-        go = st.form_submit_button(
-            "Start the test",
-            type="primary",
-            use_container_width=True,
-        )
+        phone = st.text_input("WhatsApp number", placeholder="+20 100 000 0000")
+        go = st.form_submit_button("Start the test", type="primary", use_container_width=True)
     if not go:
         return
-
     digits = "".join(c for c in phone if c.isdigit())
     if len(name.strip()) < 3 or len(digits) < 8:
         st.error("Enter your full name and a valid WhatsApp number.")
@@ -124,59 +85,69 @@ def start():
         bank=bank,
         prior=store.used_ids(digits),
         save_error=None,
+        finish_reason="completed",
         current_level=0,
+        res=None,
     )
     st.rerun()
 
 
 def pick_level(level):
-    """Choose a balanced 2-per-skill batch and freeze option order once chosen."""
+    """Select 2 questions per skill, preferably with different question types; freeze option order."""
     used = {h["id"] for h in S.history}
     prior = S.prior
-    candidates = [
-        q for q in S.bank
-        if q["level"] == sc.LEVELS[level] and q["id"] not in used
-    ]
-
+    candidates = [q for q in S.bank if q["level"] == sc.LEVELS[level] and q["id"] not in used]
     selected = []
+
     for skill in sc.SKILLS:
-        pool = [
-            q for q in candidates
-            if q["skill"] == skill and q["id"] not in prior
-        ]
+        pool = [q for q in candidates if q["skill"] == skill and q["id"] not in prior]
         if len(pool) < 2:
             pool = [q for q in candidates if q["skill"] == skill]
-        if pool:
-            selected.extend(random.sample(pool, min(2, len(pool))))
+        if not pool:
+            continue
 
-    # Freeze the option order for each question. This is critical: Streamlit
-    # reruns the script after radio-button interaction, so randomizing directly
-    # inside st.radio() causes choices to move between renders.
+        by_type = {}
+        for q in pool:
+            by_type.setdefault(q.get("type", "mcq"), []).append(q)
+        types = list(by_type)
+        random.shuffle(types)
+        chosen = []
+        for typ in types:
+            if len(chosen) >= 2:
+                break
+            chosen.append(random.choice(by_type[typ]))
+        remaining = [q for q in pool if q["id"] not in {x["id"] for x in chosen}]
+        while len(chosen) < 2 and remaining:
+            q = random.choice(remaining)
+            chosen.append(q)
+            remaining = [x for x in remaining if x["id"] != q["id"]]
+        selected.extend(chosen[:2])
+
     for q in selected:
         opts = [q.get(f"option_{c}", "") for c in "abcd"]
         q["display_options"] = random.sample(opts, len(opts))
-
     random.shuffle(selected)
     return selected[:sc.QUESTIONS_PER_LEVEL]
 
 
-def finish():
+def finish(reason=None):
+    S.finish_reason = reason or S.get("finish_reason", "completed")
     dur = int(min(time.time() - S.started, sc.MAX_MINUTES * 60))
     S.res = sc.summarize(S.history)
     try:
         store.save_result(
-            dict(
-                timestamp=datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                name=S.name,
-                whatsapp=S.phone,
-                overall=S.res["overall"],
-                grammar=S.res["Grammar"],
-                vocabulary=S.res["Vocabulary"],
-                reading=S.res["Reading"],
-                answered=len(S.history),
-                duration_sec=dur,
-                question_ids=",".join(h["id"] for h in S.history),
-            )
+            {
+                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "name": S.name,
+                "whatsapp": S.phone,
+                "overall": S.res["overall"],
+                "grammar": S.res["Grammar"],
+                "vocabulary": S.res["Vocabulary"],
+                "reading": S.res["Reading"],
+                "answered": len(S.history),
+                "duration_sec": dur,
+                "question_ids": ",".join(h["id"] for h in S.history),
+            }
         )
     except Exception as e:
         S.save_error = str(e)
@@ -184,60 +155,44 @@ def finish():
     st.rerun()
 
 
-def test():
-    # Server-side hard stop.
+def test_page():
     if time.time() - S.started >= sc.MAX_MINUTES * 60:
-        return finish()
+        return finish("time_limit")
 
     level = S.current_level
     if S.cur is None:
         step = sc.next_step(S.history)
         if step[0] == "stop":
-            return finish()
+            return finish(step[1])
         level = step[1]
         S.current_level = level
         S.cur = pick_level(level)
         if not S.cur:
-            return finish()
+            return finish("no_questions")
 
     q = S.cur[0]
     show_timer()
-    st.caption(
-        f"Question {len(S.history) + 1} of up to {sc.MAX_QUESTIONS} · {q['skill']}"
-    )
+    st.caption(f"Question {len(S.history)+1} of up to {sc.MAX_QUESTIONS} · {q['skill']}")
 
+    if q.get("image_data"):
+        raw = q["image_data"]
+        if "," in raw:
+            st.image(base64.b64decode(raw.split(",",1)[1]), width=360)
     if q.get("passage"):
-        st.markdown(
-            f"<div class='passage'>{html.escape(q['passage'])}</div>",
-            unsafe_allow_html=True,
-        )
+        st.markdown(f"<div class='passage'>{html.escape(q['passage'])}</div>", unsafe_allow_html=True)
 
     st.subheader(q["question"])
-
-    # IMPORTANT: use the frozen option order stored in S.cur, never random.sample
-    # during rendering.
     opts = q["display_options"]
-    choice = st.radio(
-        "Answer",
-        opts,
-        index=None,
-        key=f"q{len(S.history)}",
-        label_visibility="collapsed",
-    )
+    choice = st.radio("Answer", opts, index=None, key=f"q_{len(S.history)}", label_visibility="collapsed")
 
-    if st.button(
-        "Confirm answer",
-        type="primary",
-        disabled=choice is None,
-        use_container_width=True,
-    ):
+    if st.button("Confirm answer", type="primary", disabled=choice is None, use_container_width=True):
         S.history.append(
-            dict(
-                id=q["id"],
-                skill=q["skill"],
-                level=q["level"],
-                correct=choice == q["answer"],
-            )
+            {
+                "id": q["id"],
+                "skill": q["skill"],
+                "level": q["level"],
+                "correct": choice == q["answer"],
+            }
         )
         S.cur.pop(0)
         if not S.cur:
@@ -245,73 +200,82 @@ def test():
         st.rerun()
 
     st.caption("Your answer is final. You cannot go back.")
+    st.markdown("<div style='height:.25rem'></div>", unsafe_allow_html=True)
+    if st.button("This is too hard — I give up", use_container_width=True):
+        finish("gave_up")
 
 
 LEVEL_FEEDBACK = {
     "A1": {
         "title": "You’re building a strong foundation! 😊",
-        "grammar": "You can use very simple sentence patterns and basic grammar for everyday needs. Next, build stronger control of basic forms and sentence structure.",
-        "vocabulary": "You can understand and use basic everyday vocabulary about people, home, family, and immediate needs. Next, expand your core everyday vocabulary.",
-        "reading": "You can read very short, simple texts and understand familiar everyday information. Next, practise short messages, signs, and simple descriptions."
+        "grammar": "You can use very basic sentence patterns. Improve next by practising am/is/are, present simple, basic word order, pronouns and articles.",
+        "vocabulary": "You can handle familiar everyday words. Improve next by expanding core vocabulary for people, home, food, places and daily routines, and learning words in context.",
+        "reading": "You can understand very short, simple texts and familiar information. Improve next by reading short messages, notices, descriptions and simple stories.",
     },
     "A2": {
         "title": "Well done! You can handle familiar English. 😊",
-        "grammar": "You can use a wider range of basic grammar, although mistakes are still normal. Next, improve accuracy and control across common structures.",
-        "vocabulary": "You have common vocabulary for familiar topics such as family, shopping, work, places, and daily activities. Next, widen your range and use words in context.",
-        "reading": "You can read short, straightforward texts about familiar topics and find key information. Next, practise longer everyday texts and more detail."
+        "grammar": "You can use common grammar for everyday situations. Improve next by strengthening past forms, present perfect, comparatives, quantifiers and basic modals.",
+        "vocabulary": "You have useful everyday vocabulary. Improve next by learning more collocations, common word families and words in short contexts instead of isolated definitions.",
+        "reading": "You can understand straightforward texts about familiar topics. Improve next by reading longer everyday texts and checking meaning from the whole text, not single words.",
     },
     "B1": {
         "title": "Great job! You’re working with independent English. 😊",
-        "grammar": "You can handle a useful range of grammar with reasonable control. Next, improve accuracy and confidence with more complex structures.",
-        "vocabulary": "You have enough vocabulary for familiar topics, experiences, plans, and simple explanations. Next, build a wider range for discussion and description.",
-        "reading": "You can understand the main points and important details in straightforward texts on familiar topics. Next, read longer articles and texts with less familiar vocabulary."
+        "grammar": "You can handle a useful range of grammar. Improve next by working on perfect forms, conditionals, reported speech, linking ideas and accuracy in longer sentences.",
+        "vocabulary": "You can discuss familiar topics with a useful range of words. Improve next by building collocations, phrasal verbs, word families and more precise alternatives.",
+        "reading": "You can understand the main ideas and important details in straightforward texts. Improve next by reading longer articles and answering inference questions from the whole text.",
     },
     "B2": {
         "title": "Excellent! You’re handling a wide range of English. 😊",
-        "grammar": "You have good control of grammar and can handle more complex structures. Next, refine accuracy and flexibility in complex sentences.",
-        "vocabulary": "You can work with a wider vocabulary for everyday, study, and work topics, including some topic-specific language. Next, develop precision and range.",
-        "reading": "You can understand longer texts, main ideas, supporting detail, and some abstract content. Next, read more demanding articles and texts with varied viewpoints."
+        "grammar": "You have good control of complex grammar. Improve next by refining tense contrasts, passives, relative clauses, gerunds/infinitives, modals and sentence-level accuracy.",
+        "vocabulary": "You have a wide working vocabulary. Improve next by focusing on precision, collocation, register, word choice and subtle differences between near-synonyms.",
+        "reading": "You can understand longer texts and some abstract ideas. Improve next by reading demanding articles, identifying implied meaning and following arguments across paragraphs.",
     },
     "C1": {
         "title": "Fantastic! You’re operating at an advanced level. 😊",
-        "grammar": "You have strong grammatical control. Next, focus on precision, nuance, and flexible use of complex structures.",
-        "vocabulary": "You have a broad vocabulary and can choose words flexibly. Next, continue developing precision, collocation, and subtle differences in meaning.",
-        "reading": "You can understand complex social, academic, and professional texts, including implied meaning. Next, challenge yourself with dense and specialised texts."
+        "grammar": "You show strong grammatical control. Improve next by refining complex structures, inversion, emphasis, clause relationships, prepositions and fine distinctions in meaning.",
+        "vocabulary": "You have a broad vocabulary. Improve next by developing precision, collocation, register, idiomaticity and nuanced choices between similar words.",
+        "reading": "You can understand complex social, academic and professional texts, including implied meaning. Improve next by reading dense texts and tracking stance, nuance and argument structure.",
     },
     "C2": {
         "title": "Outstanding! You’re working with highly advanced English. 🌟",
-        "grammar": "You show very strong control, including complex language. Next, maintain precision and sensitivity to fine grammatical choices.",
-        "vocabulary": "You can work with a very broad vocabulary and fine differences in meaning. Next, continue refining precision, idiomaticity, and nuance.",
-        "reading": "You can understand very demanding texts, including subtle meaning, difficult ideas, and sophisticated language. Next, keep reading widely across academic, professional, and literary texts."
+        "grammar": "You show very strong control of complex language. Improve next by refining nuance, emphasis, register and the smallest differences between possible structures.",
+        "vocabulary": "You can work with a very broad vocabulary. Improve next by refining nuance, idiomaticity, collocation and highly precise word choice.",
+        "reading": "You can understand very demanding texts and subtle ideas. Improve next by reading widely across academic, professional and literary material and analysing tone and implication.",
     },
 }
 
 
 def done():
     r = S.res
-    cefr = r["overall"].split(".")[0]
-    fb = LEVEL_FEEDBACK[cefr]
+    band = r["overall"].split(".")[0]
+    fb = LEVEL_FEEDBACK[band]
     st.title("Test complete")
     st.markdown(
-        f"<div class='lvl'>Your English level<b>{r['overall']}</b></div>",
+        f"<div class='lvl'>Your English level<b>{html.escape(r['overall'])}</b></div>",
         unsafe_allow_html=True,
     )
-    st.success(f"{fb['title']}")
+    st.success(fb["title"])
+
     cols = st.columns(3)
     for c, skill in zip(cols, sc.SKILLS):
         c.metric(skill, r[skill])
-    st.markdown(
-        f"""<div class='feedback'>
-        <h3>What this means at {cefr}</h3>
-        <p><strong>Grammar:</strong> {html.escape(fb['grammar'])}</p>
-        <p><strong>Vocabulary:</strong> {html.escape(fb['vocabulary'])}</p>
-        <p><strong>Reading:</strong> {html.escape(fb['reading'])}</p>
-        </div>""",
-        unsafe_allow_html=True,
-    )
-    st.write("Your teacher will contact you on WhatsApp.")
+
+    st.markdown("### What you need to focus on next")
+    for skill in sc.SKILLS:
+        below = sc.level_index(r[skill]) < sc.level_index(r["overall"])
+        if below:
+            lead = "This is currently below your overall placement. "
+        else:
+            lead = "To move to a higher level, "
+        key = skill.lower()
+        st.markdown(
+            f"<div class='feedback'><strong>{skill}</strong><br>{lead}{html.escape(fb[key])}</div>",
+            unsafe_allow_html=True,
+        )
+
+    st.write("😊 Well done! Your teacher will contact you on WhatsApp.")
     if S.save_error:
-        st.warning("The result was not saved. Please send your teacher a screenshot.")
+        st.warning("Your result could not be saved. Please send your teacher a screenshot of this page.")
     if st.button("Take the test again", use_container_width=True):
         S.clear()
         st.rerun()
@@ -320,58 +284,31 @@ def done():
 def results_tab():
     df = store.load_results()
     if df.empty:
-        st.info("No results yet.")
+        st.info("No results have been saved yet.")
         return
-
     df = df.sort_values("timestamp").reset_index(drop=True)
     df["attempt"] = df.groupby("whatsapp").cumcount() + 1
     hist = df.groupby("whatsapp")["overall"].apply(lambda s: " → ".join(s))
     df["retake_history"] = df["whatsapp"].map(hist)
-    df["duration"] = (
-        pd.to_numeric(df["duration_sec"], errors="coerce")
-        .fillna(0)
-        .astype(int)
-        .map(lambda s: f"{s // 60}m {s % 60:02d}s")
-    )
+    df["duration"] = pd.to_numeric(df["duration_sec"], errors="coerce").fillna(0).astype(int).map(lambda s: f"{s//60}m {s%60:02d}s")
     show = df.drop(columns=["question_ids", "duration_sec"]).iloc[::-1]
     term = st.text_input("Search name or number")
     if term:
-        show = show[
-            show["name"].str.contains(term, case=False, na=False)
-            | show["whatsapp"].str.contains(term, na=False)
-        ]
+        show = show[show["name"].str.contains(term, case=False, na=False) | show["whatsapp"].str.contains(term, na=False)]
     st.dataframe(show, use_container_width=True, hide_index=True)
-    st.download_button(
-        "Download results CSV",
-        show.to_csv(index=False),
-        "results.csv",
-        "text/csv",
-        use_container_width=True,
-    )
+    st.download_button("Download results CSV", show.to_csv(index=False), "results.csv", "text/csv", use_container_width=True)
 
 
 def bank_tab():
     bank = store.load_bank()
-    st.caption(
-        f"Current bank: {len(bank)} questions · "
-        "Target: 12 questions per sublevel (4 per skill)."
-    )
-
+    st.caption(f"Current bank: {len(bank)} questions · target: 12 per sublevel")
     up = st.file_uploader("Upload JSON/CSV", type=["json", "csv"])
-    mode = st.radio("Import", ["Add", "Replace"], horizontal=True)
+    mode = st.radio("Import mode", ["Add", "Replace"], horizontal=True)
     if up and st.button("Import question bank", type="primary"):
         try:
             import json
-            new = store.normalize(
-                json.load(up)
-                if up.name.endswith("json")
-                else pd.read_csv(up, dtype=str).fillna("")
-            )
-            merged = (
-                new
-                if mode == "Replace"
-                else pd.concat([bank, new]).drop_duplicates("id", keep="last")
-            )
+            new = store.normalize(json.load(up) if up.name.endswith("json") else pd.read_csv(up, dtype=str).fillna(""))
+            merged = new if mode == "Replace" else pd.concat([bank, new]).drop_duplicates("id", keep="last")
             errs = store.validate(merged)
             if errs:
                 st.error("\n\n".join(errs[:10]))
@@ -381,19 +318,10 @@ def bank_tab():
                 st.rerun()
         except Exception as e:
             st.error(f"Could not import: {e}")
-
     sk = st.multiselect("Skill", sc.SKILLS)
     lv = st.multiselect("Sublevel", sc.LEVELS)
-    sub = bank[
-        (bank["skill"].isin(sk) if sk else True)
-        & (bank["level"].isin(lv) if lv else True)
-    ]
-    ed = st.data_editor(
-        sub,
-        num_rows="dynamic",
-        use_container_width=True,
-        hide_index=True,
-    )
+    sub = bank[(bank["skill"].isin(sk) if sk else True) & (bank["level"].isin(lv) if lv else True)]
+    ed = st.data_editor(sub, num_rows="dynamic", use_container_width=True, hide_index=True)
     if st.button("Save edited bank"):
         new = pd.concat([bank[~bank["id"].isin(sub["id"])], store.normalize(ed)])
         errs = store.validate(new)
@@ -408,25 +336,26 @@ def bank_tab():
 def teacher():
     st.title("Teacher area")
     pw = store.secret("TEACHER_PASSWORD")
+    if not pw:
+        st.error("Teacher access is not configured yet.")
+        st.write("Set TEACHER_PASSWORD in Streamlit Secrets, then reopen this page.")
+        return
     if not S.get("auth"):
-        entered = st.text_input("Password", type="password")
+        entered = st.text_input("Teacher password", type="password")
         if st.button("Sign in", type="primary"):
-            if hmac.compare_digest(entered, pw or "teacher123"):
+            if hmac.compare_digest(entered, pw):
                 S.auth = True
                 st.rerun()
             st.error("Wrong password.")
         return
-
     st.caption("Storage: " + store.backend_name())
-    a, b = st.tabs(["Results", "Question bank"])
-    with a:
-        results_tab()
-    with b:
-        bank_tab()
+    a,b = st.tabs(["Results", "Question bank"])
+    with a: results_tab()
+    with b: bank_tab()
 
 
 if st.query_params.get("page") == "teacher":
     teacher()
 else:
     S.setdefault("stage", "start")
-    {"start": start, "test": test, "done": done}[S.stage]()
+    {"start": start, "test": test_page, "done": done}[S.stage]()
