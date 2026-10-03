@@ -21,13 +21,15 @@ st.markdown(
     """
 <style>
 .block-container{max-width:720px;padding-top:1.2rem}
-.timer-banner{position:sticky;top:.35rem;z-index:9999;text-align:center;font-weight:700;font-size:1.18rem;padding:.65rem 1rem;margin:0 0 1rem;background:rgba(255,255,255,.98);border:2px solid #1B4965;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.12)}
-.timer-banner strong{font-size:1.35rem;margin-left:.25rem}
-@media(max-width:640px){.timer-banner{top:.2rem;font-size:1.05rem;padding:.55rem .75rem}.timer-banner strong{font-size:1.2rem}}
+.timer-card{width:100%;box-sizing:border-box;text-align:center;font-weight:800;font-size:1.25rem;padding:.8rem 1rem;margin:0 0 1.1rem;background:#ffffff;color:#14232F;border:3px solid #1B4965;border-radius:14px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+.timer-card .time{font-size:1.7rem;letter-spacing:.05em;margin-left:.35rem}
 .lvl{border-radius:16px;padding:1.4rem;text-align:center;margin:1rem 0;border:1px solid #d5dee6}
 .lvl b{font-size:2.7rem;display:block}
 .passage{border-left:4px solid #1B4965;padding:.9rem 1rem;border-radius:6px;margin-bottom:.9rem}
+.feedback{border:1px solid #d5dee6;border-radius:14px;padding:1rem;margin-top:1rem}
+.feedback h3{margin-top:0}
 footer,#MainMenu{visibility:hidden}
+@media(max-width:640px){.timer-card{font-size:1.05rem;padding:.7rem .75rem}.timer-card .time{font-size:1.45rem}}
 </style>
 """,
     unsafe_allow_html=True,
@@ -37,23 +39,52 @@ S = st.session_state
 
 
 # ----------------------------- timer -----------------------------
-@st.fragment(run_every=1)
 def show_timer():
-    """Prominent live countdown that stays below Streamlit's top toolbar."""
+    """Visible client-side countdown; server-side checks enforce the 40-minute limit."""
     remaining = max(0, int(S.started + sc.MAX_MINUTES * 60 - time.time()))
-    mins, secs = divmod(remaining, 60)
-    st.markdown(
-        f"""<div class="timer-banner">⏱ Time remaining: <strong>{mins:02d}:{secs:02d}</strong></div>""",
-        unsafe_allow_html=True,
+    components.html(
+        f"""
+        <style>
+          html, body {{ margin: 0; padding: 0; background: transparent; }}
+          .timer-card {{
+            width: 100%; box-sizing: border-box; text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-weight: 800; font-size: 20px; padding: 12px 10px;
+            background: #ffffff; color: #14232F;
+            border: 3px solid #1B4965; border-radius: 14px;
+            box-shadow: 0 4px 14px rgba(0,0,0,.18);
+          }}
+          .timer-card .time {{ font-size: 28px; letter-spacing: .05em; margin-left: 6px; }}
+          @media(max-width:640px) {{
+            .timer-card {{ font-size: 17px; padding: 11px 8px; }}
+            .timer-card .time {{ font-size: 24px; }}
+          }}
+        </style>
+        <div class="timer-card">⏱ Time remaining:
+          <span id="time" class="time">--:--</span>
+        </div>
+        <script>
+          let remaining = {remaining};
+          const el = document.getElementById('time');
+          function render() {{
+            const m = Math.floor(remaining / 60);
+            const sec = remaining % 60;
+            el.textContent = String(m).padStart(2,'0') + ':' + String(sec).padStart(2,'0');
+            remaining = Math.max(0, remaining - 1);
+          }}
+          render();
+          setInterval(render, 1000);
+        </script>
+        """,
+        height=82,
+        scrolling=False,
     )
-    if remaining <= 0:
-        st.rerun()
 
 
 def start():
     st.title("English Squad Placement Test")
     st.write(
-        "Grammar, vocabulary and reading. Up to 60 minutes. "
+        "Grammar, vocabulary and reading. Up to 40 minutes. "
         "Every answer is final."
     )
     with st.form("start"):
@@ -216,21 +247,71 @@ def test():
     st.caption("Your answer is final. You cannot go back.")
 
 
+LEVEL_FEEDBACK = {
+    "A1": {
+        "title": "You’re building a strong foundation! 😊",
+        "grammar": "You can use very simple sentence patterns and basic grammar for everyday needs. Next, build stronger control of basic forms and sentence structure.",
+        "vocabulary": "You can understand and use basic everyday vocabulary about people, home, family, and immediate needs. Next, expand your core everyday vocabulary.",
+        "reading": "You can read very short, simple texts and understand familiar everyday information. Next, practise short messages, signs, and simple descriptions."
+    },
+    "A2": {
+        "title": "Well done! You can handle familiar English. 😊",
+        "grammar": "You can use a wider range of basic grammar, although mistakes are still normal. Next, improve accuracy and control across common structures.",
+        "vocabulary": "You have common vocabulary for familiar topics such as family, shopping, work, places, and daily activities. Next, widen your range and use words in context.",
+        "reading": "You can read short, straightforward texts about familiar topics and find key information. Next, practise longer everyday texts and more detail."
+    },
+    "B1": {
+        "title": "Great job! You’re working with independent English. 😊",
+        "grammar": "You can handle a useful range of grammar with reasonable control. Next, improve accuracy and confidence with more complex structures.",
+        "vocabulary": "You have enough vocabulary for familiar topics, experiences, plans, and simple explanations. Next, build a wider range for discussion and description.",
+        "reading": "You can understand the main points and important details in straightforward texts on familiar topics. Next, read longer articles and texts with less familiar vocabulary."
+    },
+    "B2": {
+        "title": "Excellent! You’re handling a wide range of English. 😊",
+        "grammar": "You have good control of grammar and can handle more complex structures. Next, refine accuracy and flexibility in complex sentences.",
+        "vocabulary": "You can work with a wider vocabulary for everyday, study, and work topics, including some topic-specific language. Next, develop precision and range.",
+        "reading": "You can understand longer texts, main ideas, supporting detail, and some abstract content. Next, read more demanding articles and texts with varied viewpoints."
+    },
+    "C1": {
+        "title": "Fantastic! You’re operating at an advanced level. 😊",
+        "grammar": "You have strong grammatical control. Next, focus on precision, nuance, and flexible use of complex structures.",
+        "vocabulary": "You have a broad vocabulary and can choose words flexibly. Next, continue developing precision, collocation, and subtle differences in meaning.",
+        "reading": "You can understand complex social, academic, and professional texts, including implied meaning. Next, challenge yourself with dense and specialised texts."
+    },
+    "C2": {
+        "title": "Outstanding! You’re working with highly advanced English. 🌟",
+        "grammar": "You show very strong control, including complex language. Next, maintain precision and sensitivity to fine grammatical choices.",
+        "vocabulary": "You can work with a very broad vocabulary and fine differences in meaning. Next, continue refining precision, idiomaticity, and nuance.",
+        "reading": "You can understand very demanding texts, including subtle meaning, difficult ideas, and sophisticated language. Next, keep reading widely across academic, professional, and literary texts."
+    },
+}
+
+
 def done():
     r = S.res
+    cefr = r["overall"].split(".")[0]
+    fb = LEVEL_FEEDBACK[cefr]
     st.title("Test complete")
     st.markdown(
         f"<div class='lvl'>Your English level<b>{r['overall']}</b></div>",
         unsafe_allow_html=True,
     )
+    st.success(f"{fb['title']}")
     cols = st.columns(3)
-    for c, s in zip(cols, sc.SKILLS):
-        c.metric(s, r[s])
+    for c, skill in zip(cols, sc.SKILLS):
+        c.metric(skill, r[skill])
+    st.markdown(
+        f"""<div class='feedback'>
+        <h3>What this means at {cefr}</h3>
+        <p><strong>Grammar:</strong> {html.escape(fb['grammar'])}</p>
+        <p><strong>Vocabulary:</strong> {html.escape(fb['vocabulary'])}</p>
+        <p><strong>Reading:</strong> {html.escape(fb['reading'])}</p>
+        </div>""",
+        unsafe_allow_html=True,
+    )
     st.write("Your teacher will contact you on WhatsApp.")
     if S.save_error:
-        st.warning(
-            "The result was not saved. Please send your teacher a screenshot."
-        )
+        st.warning("The result was not saved. Please send your teacher a screenshot.")
     if st.button("Take the test again", use_container_width=True):
         S.clear()
         st.rerun()
