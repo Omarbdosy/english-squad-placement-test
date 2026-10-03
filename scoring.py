@@ -4,7 +4,7 @@ The CEFR mapping below is a working assessment calibration, not a claim made by 
 LEVELS = [f"{c}.{i}" for c in ("A1", "A2", "B1", "B2", "C1", "C2") for i in (1, 2, 3)]
 SKILLS = ["Grammar", "Vocabulary", "Reading"]
 
-MAX_MINUTES = 40
+MAX_MINUTES = 30
 QUESTIONS_PER_LEVEL = 6          # 2 per skill
 MAX_QUESTIONS = 80
 LEVEL_PASS = 4                   # 4/6 = 67%

@@ -14,6 +14,7 @@ import scoring as sc
 import storage as store
 
 st.set_page_config(page_title="English Squad Placement Test", page_icon="📘", layout="centered")
+st.set_option("client.toolbarMode", "viewer")
 
 ROOT = Path(os.path.dirname(os.path.abspath(__file__)))
 S = st.session_state
@@ -34,16 +35,17 @@ st.markdown(
 html,body,[data-testid=stAppViewContainer],[data-testid=stHeader]{background:var(--es-bg)!important;color:var(--es-text)!important}
 [data-testid=stSidebar]{background:var(--es-panel)!important}
 [data-testid=stMarkdownContainer], [data-testid=stText], p, label, .stCaption, .stTextInput label, .stRadio label{color:var(--es-text)!important}
-.block-container{max-width:760px;padding-top:1.4rem;padding-bottom:3rem}
+.block-container{max-width:760px;padding-top:3.6rem;padding-bottom:3rem}
 .brand-line{height:4px;border-radius:999px;background:linear-gradient(90deg,var(--es-purple),var(--es-magenta));margin:0 0 1.1rem}
 .timer-card{
-  width:100%;box-sizing:border-box;text-align:center;font-weight:900;padding:1rem .8rem;margin:0 0 1.15rem;
+  width:88%;max-width:640px;box-sizing:border-box;text-align:center;font-weight:900;padding:1rem .8rem;margin:0 auto 1.5rem;
   background:linear-gradient(180deg,#100B16,#171020)!important;color:var(--es-text)!important;
   border:2px solid var(--es-purple)!important;border-top-color:var(--es-violet)!important;border-radius:16px;
   box-shadow:0 10px 30px rgba(0,0,0,.34),0 0 24px rgba(122,50,201,.12);
 }
 .timer-card span{display:block;font-size:.76rem;letter-spacing:.23em;margin-bottom:.28rem;color:#E4D8EE!important}
 .timer-card strong{display:block;font-size:2.5rem;line-height:1.02;letter-spacing:.08em;color:#fff!important}
+.timer-card{position:relative;z-index:1}
 .timer-card.warn{border-color:var(--es-magenta)!important}
 .stForm, [data-testid=stForm]{background:var(--es-panel)!important;border:1px solid #35233F!important;border-radius:16px!important;padding:1rem!important}
 [data-baseweb=base-input], [data-baseweb=select], textarea{background:#100B15!important;color:#fff!important;border-color:#4A3158!important}
@@ -61,7 +63,7 @@ button{border-color:#4A3158!important;color:#fff!important;background:#17111D!im
 .small-note{font-size:.9rem;color:var(--es-muted)!important}
 footer,#MainMenu{visibility:hidden}
 @media(max-width:640px){
-  .block-container{padding-left:.7rem;padding-right:.7rem;padding-top:1rem}
+  .block-container{padding-left:.7rem;padding-right:.7rem;padding-top:2.2rem}
   .timer-card{padding:.85rem .65rem}
   .timer-card span{font-size:.7rem}
   .timer-card strong{font-size:2.05rem}
@@ -92,7 +94,7 @@ def show_timer():
 def start():
     st.markdown("<div class='brand-line'></div>", unsafe_allow_html=True)
     st.title("English Squad Placement Test")
-    st.write("Grammar, vocabulary and reading. Up to 40 minutes. Every answer is final.")
+    st.write("Grammar, vocabulary and reading. Up to 30 minutes. Every answer is final.")
     with st.form("start"):
         name = st.text_input("Full name")
         phone = st.text_input("WhatsApp number", placeholder="+20 100 000 0000")
