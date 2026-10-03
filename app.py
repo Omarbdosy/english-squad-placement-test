@@ -51,6 +51,11 @@ html,body,[data-testid=stAppViewContainer],[data-testid=stHeader]{background:var
 [data-baseweb=base-input], [data-baseweb=select], textarea{background:#100B15!important;color:#fff!important;border-color:#4A3158!important}
 [data-baseweb=base-input] input{color:#fff!important}
 button[kind=primary]{background:linear-gradient(90deg,var(--es-purple),var(--es-magenta))!important;border:0!important;color:#fff!important}
+button[kind=primary]:disabled{opacity:.32!important;cursor:not-allowed!important;box-shadow:none!important}
+button[kind=primary]:not(:disabled){position:relative;isolation:isolate;box-shadow:0 0 0 1px rgba(160,76,255,.15),0 8px 24px rgba(122,50,201,.20)!important;animation:esPulse 2.2s ease-in-out infinite}
+button[kind=primary]:not(:disabled)::before{content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;background:conic-gradient(transparent 0deg,rgba(255,255,255,.92) 14deg,rgba(160,76,255,.95) 32deg,transparent 54deg,transparent 360deg);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:esLightning 1.35s linear infinite;transform-origin:center;pointer-events:none;z-index:-1}
+@keyframes esLightning{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes esPulse{0%,100%{filter:brightness(1);box-shadow:0 0 0 1px rgba(160,76,255,.18),0 8px 24px rgba(122,50,201,.20)!important}50%{filter:brightness(1.08);box-shadow:0 0 0 1px rgba(200,50,122,.34),0 0 26px rgba(160,76,255,.24)!important}}
 button{border-color:#4A3158!important;color:#fff!important;background:#17111D!important}
 .stRadio>div{gap:.55rem}
 .stRadio div[role=radiogroup]>label{background:#17111D!important;border:1px solid #34233F!important;border-radius:10px!important;padding:.42rem .55rem!important;margin-bottom:.22rem!important}
@@ -64,7 +69,7 @@ button{border-color:#4A3158!important;color:#fff!important;background:#17111D!im
 footer,#MainMenu{visibility:hidden}
 @media(max-width:640px){
   .block-container{padding-left:.7rem;padding-right:.7rem;padding-top:2.2rem}
-  .timer-card{padding:.85rem .65rem}
+  .timer-card{padding:.85rem .65rem;margin:.85rem auto 1.25rem}
   .timer-card span{font-size:.7rem}
   .timer-card strong{font-size:2.05rem}
   .brand-line{margin-bottom:.85rem}
