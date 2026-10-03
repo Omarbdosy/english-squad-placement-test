@@ -8,6 +8,8 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+import phonenumbers
+from phonenumbers import NumberParseException
 import streamlit as st
 
 import scoring as sc
@@ -52,9 +54,7 @@ html,body,[data-testid=stAppViewContainer],[data-testid=stHeader]{background:var
 [data-baseweb=base-input] input{color:#fff!important}
 button[kind=primary]{background:linear-gradient(90deg,var(--es-purple),var(--es-magenta))!important;border:0!important;color:#fff!important}
 button[kind=primary]:disabled{opacity:.26!important;cursor:not-allowed!important;box-shadow:none!important;filter:saturate(.7)!important}
-button[kind=primary]:not(:disabled){position:relative;isolation:isolate;box-shadow:0 8px 24px rgba(122,50,201,.20)!important}
-@keyframes esBorderTravel{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes esGlowPulse{0%,100%{opacity:.72}50%{opacity:1}}
+button[kind=primary]:not(:disabled){box-shadow:0 8px 24px rgba(122,50,201,.20)!important}
 button{border-color:#4A3158!important;color:#fff!important;background:#17111D!important}
 .stRadio>div{gap:.55rem}
 .stRadio div[role=radiogroup]>label{background:#17111D!important;border:1px solid #34233F!important;border-radius:10px!important;padding:.42rem .55rem!important;margin-bottom:.22rem!important}
@@ -95,19 +95,66 @@ def show_timer():
         st.rerun()
 
 
+def validate_full_name(name: str):
+    """Require a plausible full name without pretending we can verify identity."""
+    cleaned = " ".join(name.strip().split())
+    words = cleaned.split()
+    if len(words) < 2:
+        return False, "Please enter your real full name (first name + family name)."
+    if len(cleaned) < 5 or len(cleaned) > 80:
+        return False, "Please enter a valid full name."
+    if any(len(w) < 2 for w in words):
+        return False, "Please enter your full name, not initials or a single letter."
+    if any(not all(ch.isalpha() or ch in "'-" for ch in w) for w in words):
+        return False, "Please enter your name using letters, spaces, apostrophes, or hyphens only."
+    lowered = cleaned.casefold()
+    blocked = {"test student", "test user", "student test", "asdf gh", "qwerty ui", "your name"}
+    if lowered in blocked:
+        return False, "Please enter your real full name."
+    return True, cleaned
+
+
+def validate_whatsapp_number(raw_phone: str):
+    """Validate phone-number plausibility/format. Actual WhatsApp registration cannot be verified for free."""
+    raw = raw_phone.strip()
+    if not raw:
+        return False, "", "Please enter your WhatsApp number with the country code."
+    try:
+        region = None if raw.startswith("+") else "EG"
+        parsed = phonenumbers.parse(raw, region)
+    except NumberParseException:
+        return False, "", "Please enter a valid international phone number, including the country code (e.g. +20...)."
+    if not phonenumbers.is_possible_number(parsed):
+        return False, "", "That phone number does not look valid. Check the country code and digits."
+    if not phonenumbers.is_valid_number(parsed):
+        return False, "", "That phone number is not a valid number for its country. Check the country code and digits."
+    normalized = phonenumbers.format_number(parsed, phonenumbers.PhoneNumberFormat.E164)
+    return True, normalized, ""
+
+
 def start():
     st.markdown("<div class='brand-line'></div>", unsafe_allow_html=True)
     st.title("English Squad Placement Test")
     st.write("Grammar, vocabulary and reading. Up to 30 minutes. Every answer is final.")
+    st.caption("One attempt per WhatsApp number. Enter your real full name.")
     with st.form("start"):
         name = st.text_input("Full name")
         phone = st.text_input("WhatsApp number", placeholder="+20 100 000 0000")
         go = st.form_submit_button("Start the test", type="primary", use_container_width=True)
     if not go:
         return
-    digits = "".join(c for c in phone if c.isdigit())
-    if len(name.strip()) < 3 or len(digits) < 8:
-        st.error("Enter your full name and a valid WhatsApp number.")
+    valid_name, name_error = validate_full_name(name)
+    valid_phone, normalized_phone, phone_error = validate_whatsapp_number(phone)
+    if not valid_name:
+        st.error(name_error)
+        return
+    if not valid_phone:
+        st.error(phone_error)
+        return
+
+    digits = "".join(c for c in normalized_phone if c.isdigit())
+    if store.has_completed_test(digits):
+        st.error("This WhatsApp number has already completed the placement test. Only one attempt is allowed.")
         return
 
     bank = store.load_bank().to_dict("records")
@@ -120,7 +167,7 @@ def start():
     S.update(
         stage="test",
         name=name.strip(),
-        phone="+" + digits,
+        phone=normalized_phone,
         digits=digits,
         started=time.time(),
         history=[],
@@ -232,39 +279,14 @@ def test_page():
         st.markdown(
             """
             <style>
-            /* Traveling border light inspired by the supplied CapCut reference.
-               Only appears after the student selects an answer. */
             div.stButton > button[kind="primary"]:not(:disabled){
-                box-shadow:0 0 0 1px rgba(160,76,255,.25),0 8px 24px rgba(122,50,201,.22)!important;
-                animation:esGlowPulse 1.65s ease-in-out infinite;
-            }
-            div.stButton > button[kind="primary"]:not(:disabled)::before{
-                content:"";position:absolute;inset:-3px;border-radius:inherit;padding:2px;
-                background:conic-gradient(
-                    from 0deg,
-                    transparent 0deg,transparent 300deg,
-                    rgba(160,76,255,.10) 320deg,
-                    rgba(255,255,255,.98) 334deg,
-                    rgba(200,50,122,.95) 344deg,
-                    rgba(160,76,255,.45) 352deg,
-                    transparent 360deg
-                );
-                -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-                -webkit-mask-composite:xor;mask-composite:exclude;
-                animation:esBorderTravel 1.2s linear infinite;
-                pointer-events:none;z-index:-1;
-                filter:drop-shadow(0 0 5px rgba(160,76,255,.95)) drop-shadow(0 0 10px rgba(200,50,122,.65));
-            }
-            div.stButton > button[kind="primary"]:not(:disabled)::after{
-                content:"";position:absolute;inset:-6px;border-radius:inherit;
-                background:conic-gradient(from 0deg,transparent 0deg 325deg,rgba(160,76,255,.34) 339deg,rgba(255,255,255,.55) 347deg,transparent 356deg 360deg);
-                animation:esBorderTravel 1.2s linear infinite;
-                filter:blur(6px);opacity:.45;z-index:-2;pointer-events:none;
+                box-shadow:0 0 0 1px rgba(160,76,255,.30),0 8px 24px rgba(122,50,201,.24)!important;
             }
             </style>
             """,
             unsafe_allow_html=True,
         )
+
 
     if st.button("Confirm answer", type="primary", disabled=choice is None, use_container_width=True):
         S.history.append(

@@ -132,6 +132,15 @@ def load_results():
     return pd.read_csv(p, dtype=str).fillna("") if p.exists() else pd.DataFrame(columns=RESULT_COLS)
 
 
+def has_completed_test(digits):
+    """Return True when this normalized phone number already has a saved result."""
+    df = load_results()
+    if df.empty or "whatsapp" not in df.columns:
+        return False
+    cleaned = df["whatsapp"].astype(str).str.replace(r"\D", "", regex=True)
+    return bool((cleaned == str(digits)).any())
+
+
 def used_ids(digits):
     df = load_results(); ids=set()
     if df.empty: return ids
