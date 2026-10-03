@@ -21,17 +21,52 @@ S = st.session_state
 st.markdown(
     """
 <style>
-.block-container{max-width:740px;padding-top:1rem;padding-bottom:2.5rem}
-.timer-card{width:100%;box-sizing:border-box;text-align:center;font-weight:900;padding:1rem .8rem;margin:0 0 1.1rem;background:#fff;color:#14232F;border:4px solid #1B4965;border-radius:16px;box-shadow:0 5px 16px rgba(0,0,0,.20)}
-.timer-card span{display:block;font-size:.82rem;letter-spacing:.16em;margin-bottom:.2rem}
-.timer-card strong{display:block;font-size:2.25rem;line-height:1.05;letter-spacing:.08em}
-.lvl{border-radius:16px;padding:1.4rem;text-align:center;margin:1rem 0;border:1px solid #d5dee6}
-.lvl b{font-size:2.7rem;display:block;margin-top:.2rem}
-.passage{background:#fff;border-left:4px solid #1B4965;padding:.95rem 1rem;border-radius:8px;margin-bottom:.9rem;line-height:1.65;color:#14232F}
-.feedback{border:1px solid #d5dee6;border-radius:14px;padding:1rem;margin-top:.8rem;background:#fff}
-.small-note{font-size:.9rem;opacity:.82}
+:root{
+  --es-purple:#7A32C9;
+  --es-violet:#A04CFF;
+  --es-magenta:#C8327A;
+  --es-bg:#0E0A14;
+  --es-panel:#15101C;
+  --es-panel-2:#1B1424;
+  --es-text:#FAF7FF;
+  --es-muted:#C9C0D2;
+}
+html,body,[data-testid=stAppViewContainer],[data-testid=stHeader]{background:var(--es-bg)!important;color:var(--es-text)!important}
+[data-testid=stSidebar]{background:var(--es-panel)!important}
+[data-testid=stMarkdownContainer], [data-testid=stText], p, label, .stCaption, .stTextInput label, .stRadio label{color:var(--es-text)!important}
+.block-container{max-width:760px;padding-top:1.4rem;padding-bottom:3rem}
+.brand-line{height:4px;border-radius:999px;background:linear-gradient(90deg,var(--es-purple),var(--es-magenta));margin:0 0 1.1rem}
+.timer-card{
+  width:100%;box-sizing:border-box;text-align:center;font-weight:900;padding:1rem .8rem;margin:0 0 1.15rem;
+  background:linear-gradient(180deg,#100B16,#171020)!important;color:var(--es-text)!important;
+  border:2px solid var(--es-purple)!important;border-top-color:var(--es-violet)!important;border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.34),0 0 24px rgba(122,50,201,.12);
+}
+.timer-card span{display:block;font-size:.76rem;letter-spacing:.23em;margin-bottom:.28rem;color:#E4D8EE!important}
+.timer-card strong{display:block;font-size:2.5rem;line-height:1.02;letter-spacing:.08em;color:#fff!important}
+.timer-card.warn{border-color:var(--es-magenta)!important}
+.stForm, [data-testid=stForm]{background:var(--es-panel)!important;border:1px solid #35233F!important;border-radius:16px!important;padding:1rem!important}
+[data-baseweb=base-input], [data-baseweb=select], textarea{background:#100B15!important;color:#fff!important;border-color:#4A3158!important}
+[data-baseweb=base-input] input{color:#fff!important}
+button[kind=primary]{background:linear-gradient(90deg,var(--es-purple),var(--es-magenta))!important;border:0!important;color:#fff!important}
+button{border-color:#4A3158!important;color:#fff!important;background:#17111D!important}
+.stRadio>div{gap:.55rem}
+.stRadio div[role=radiogroup]>label{background:#17111D!important;border:1px solid #34233F!important;border-radius:10px!important;padding:.42rem .55rem!important;margin-bottom:.22rem!important}
+.passage{background:#120D17!important;border-left:4px solid var(--es-purple)!important;padding:1rem 1.05rem;border-radius:9px;margin-bottom:.95rem;line-height:1.7;color:#fff!important;border-top:1px solid #281B31}
+.lvl{border-radius:16px;padding:1.4rem;text-align:center;margin:1rem 0;border:1px solid var(--es-purple);background:linear-gradient(180deg,#17101F,#100C15)!important;color:#fff!important;box-shadow:0 12px 26px rgba(0,0,0,.25)}
+.lvl b{font-size:2.8rem;display:block;margin-top:.2rem;color:#fff!important}
+.feedback{border:1px solid #3B2846;border-radius:14px;padding:1rem;margin-top:.8rem;background:var(--es-panel)!important;color:#fff!important}
+[data-testid=stMetricValue], [data-testid=stMetricLabel]{color:#fff!important}
+.stAlert{background:#19121F!important;color:#fff!important}
+.small-note{font-size:.9rem;color:var(--es-muted)!important}
 footer,#MainMenu{visibility:hidden}
-@media(max-width:640px){.timer-card{padding:.8rem .65rem}.timer-card span{font-size:.72rem}.timer-card strong{font-size:1.9rem}.block-container{padding-left:.75rem;padding-right:.75rem}}
+@media(max-width:640px){
+  .block-container{padding-left:.7rem;padding-right:.7rem;padding-top:1rem}
+  .timer-card{padding:.85rem .65rem}
+  .timer-card span{font-size:.7rem}
+  .timer-card strong{font-size:2.05rem}
+  .brand-line{margin-bottom:.85rem}
+}
 </style>
 """,
     unsafe_allow_html=True,
@@ -44,8 +79,9 @@ def show_timer():
         return
     remaining = max(0, int(S.started + sc.MAX_MINUTES * 60 - time.time()))
     mins, secs = divmod(remaining, 60)
+    timer_cls = "timer-card warn" if remaining <= 5 * 60 else "timer-card"
     st.markdown(
-        f"<div class='timer-card'>⏱ <span>TIME REMAINING</span><strong>{mins:02d}:{secs:02d}</strong></div>",
+        f"<div class='{timer_cls}'>⏱ <span>TIME REMAINING</span><strong>{mins:02d}:{secs:02d}</strong></div>",
         unsafe_allow_html=True,
     )
     if remaining <= 0:
@@ -54,6 +90,7 @@ def show_timer():
 
 
 def start():
+    st.markdown("<div class='brand-line'></div>", unsafe_allow_html=True)
     st.title("English Squad Placement Test")
     st.write("Grammar, vocabulary and reading. Up to 40 minutes. Every answer is final.")
     with st.form("start"):
@@ -246,6 +283,7 @@ LEVEL_FEEDBACK = {
 
 
 def done():
+    st.markdown("<div class='brand-line'></div>", unsafe_allow_html=True)
     r = S.res
     band = r["overall"].split(".")[0]
     fb = LEVEL_FEEDBACK[band]
@@ -334,6 +372,7 @@ def bank_tab():
 
 
 def teacher():
+    st.markdown("<div class='brand-line'></div>", unsafe_allow_html=True)
     st.title("Teacher area")
     pw = store.secret("TEACHER_PASSWORD")
     if not pw:

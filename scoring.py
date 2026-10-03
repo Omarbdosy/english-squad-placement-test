@@ -6,7 +6,7 @@ SKILLS = ["Grammar", "Vocabulary", "Reading"]
 
 MAX_MINUTES = 40
 QUESTIONS_PER_LEVEL = 6          # 2 per skill
-MAX_QUESTIONS = len(LEVELS) * QUESTIONS_PER_LEVEL
+MAX_QUESTIONS = 80
 LEVEL_PASS = 4                   # 4/6 = 67%
 STOP_AFTER_WRONG = 4
 
