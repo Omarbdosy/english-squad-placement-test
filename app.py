@@ -51,11 +51,10 @@ html,body,[data-testid=stAppViewContainer],[data-testid=stHeader]{background:var
 [data-baseweb=base-input], [data-baseweb=select], textarea{background:#100B15!important;color:#fff!important;border-color:#4A3158!important}
 [data-baseweb=base-input] input{color:#fff!important}
 button[kind=primary]{background:linear-gradient(90deg,var(--es-purple),var(--es-magenta))!important;border:0!important;color:#fff!important}
-button[kind=primary]:disabled{opacity:.32!important;cursor:not-allowed!important;box-shadow:none!important}
-button[kind=primary]:not(:disabled){position:relative;isolation:isolate;box-shadow:0 0 0 1px rgba(160,76,255,.15),0 8px 24px rgba(122,50,201,.20)!important;animation:esPulse 2.2s ease-in-out infinite}
-button[kind=primary]:not(:disabled)::before{content:"";position:absolute;inset:-2px;border-radius:inherit;padding:2px;background:conic-gradient(transparent 0deg,rgba(255,255,255,.92) 14deg,rgba(160,76,255,.95) 32deg,transparent 54deg,transparent 360deg);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:esLightning 1.35s linear infinite;transform-origin:center;pointer-events:none;z-index:-1}
-@keyframes esLightning{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-@keyframes esPulse{0%,100%{filter:brightness(1);box-shadow:0 0 0 1px rgba(160,76,255,.18),0 8px 24px rgba(122,50,201,.20)!important}50%{filter:brightness(1.08);box-shadow:0 0 0 1px rgba(200,50,122,.34),0 0 26px rgba(160,76,255,.24)!important}}
+button[kind=primary]:disabled{opacity:.26!important;cursor:not-allowed!important;box-shadow:none!important;filter:saturate(.7)!important}
+button[kind=primary]:not(:disabled){position:relative;isolation:isolate;box-shadow:0 8px 24px rgba(122,50,201,.20)!important}
+@keyframes esBorderTravel{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes esGlowPulse{0%,100%{opacity:.72}50%{opacity:1}}
 button{border-color:#4A3158!important;color:#fff!important;background:#17111D!important}
 .stRadio>div{gap:.55rem}
 .stRadio div[role=radiogroup]>label{background:#17111D!important;border:1px solid #34233F!important;border-radius:10px!important;padding:.42rem .55rem!important;margin-bottom:.22rem!important}
@@ -228,6 +227,44 @@ def test_page():
     st.subheader(q["question"])
     opts = q["display_options"]
     choice = st.radio("Answer", opts, index=None, key=f"q_{len(S.history)}", label_visibility="collapsed")
+
+    if choice is not None:
+        st.markdown(
+            """
+            <style>
+            /* Traveling border light inspired by the supplied CapCut reference.
+               Only appears after the student selects an answer. */
+            div.stButton > button[kind="primary"]:not(:disabled){
+                box-shadow:0 0 0 1px rgba(160,76,255,.25),0 8px 24px rgba(122,50,201,.22)!important;
+                animation:esGlowPulse 1.65s ease-in-out infinite;
+            }
+            div.stButton > button[kind="primary"]:not(:disabled)::before{
+                content:"";position:absolute;inset:-3px;border-radius:inherit;padding:2px;
+                background:conic-gradient(
+                    from 0deg,
+                    transparent 0deg,transparent 300deg,
+                    rgba(160,76,255,.10) 320deg,
+                    rgba(255,255,255,.98) 334deg,
+                    rgba(200,50,122,.95) 344deg,
+                    rgba(160,76,255,.45) 352deg,
+                    transparent 360deg
+                );
+                -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+                -webkit-mask-composite:xor;mask-composite:exclude;
+                animation:esBorderTravel 1.2s linear infinite;
+                pointer-events:none;z-index:-1;
+                filter:drop-shadow(0 0 5px rgba(160,76,255,.95)) drop-shadow(0 0 10px rgba(200,50,122,.65));
+            }
+            div.stButton > button[kind="primary"]:not(:disabled)::after{
+                content:"";position:absolute;inset:-6px;border-radius:inherit;
+                background:conic-gradient(from 0deg,transparent 0deg 325deg,rgba(160,76,255,.34) 339deg,rgba(255,255,255,.55) 347deg,transparent 356deg 360deg);
+                animation:esBorderTravel 1.2s linear infinite;
+                filter:blur(6px);opacity:.45;z-index:-2;pointer-events:none;
+            }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
 
     if st.button("Confirm answer", type="primary", disabled=choice is None, use_container_width=True):
         S.history.append(
