@@ -1,0 +1,3674 @@
+[
+  {
+    "id": "G_A1.1_1",
+    "skill": "Grammar",
+    "level": "A1.1",
+    "type": "grammar_mcq",
+    "question": "She ___ my teacher.",
+    "options": [
+      "is",
+      "are",
+      "am",
+      "be"
+    ],
+    "answer": "is",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.1_2",
+    "skill": "Grammar",
+    "level": "A1.1",
+    "type": "grammar_mcq",
+    "question": "These ___ my keys.",
+    "options": [
+      "are",
+      "is",
+      "am",
+      "be"
+    ],
+    "answer": "are",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.1_3",
+    "skill": "Grammar",
+    "level": "A1.1",
+    "type": "grammar_mcq",
+    "question": "I ___ coffee every morning.",
+    "options": [
+      "drink",
+      "drinks",
+      "drinking",
+      "am drink"
+    ],
+    "answer": "drink",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.1_4",
+    "skill": "Grammar",
+    "level": "A1.1",
+    "type": "grammar_mcq",
+    "question": "___ you from Egypt?",
+    "options": [
+      "Are",
+      "Is",
+      "Am",
+      "Be"
+    ],
+    "answer": "Are",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A1.1_1",
+    "skill": "Vocabulary",
+    "level": "A1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"feeling fear\"?",
+    "options": [
+      "afraid",
+      "arrive",
+      "angry",
+      "clever"
+    ],
+    "answer": "afraid",
+    "explanation": "afraid means feeling fear.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.1_2",
+    "skill": "Vocabulary",
+    "level": "A1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"get to a place\"?",
+    "options": [
+      "arrive",
+      "afraid",
+      "angry",
+      "clever"
+    ],
+    "answer": "arrive",
+    "explanation": "arrive means get to a place.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.1_3",
+    "skill": "Vocabulary",
+    "level": "A1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"feeling mad or upset\"?",
+    "options": [
+      "angry",
+      "afraid",
+      "arrive",
+      "clever"
+    ],
+    "answer": "angry",
+    "explanation": "angry means feeling mad or upset.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.1_4",
+    "skill": "Vocabulary",
+    "level": "A1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"able to solve problems well\"?",
+    "options": [
+      "clever",
+      "afraid",
+      "arrive",
+      "angry"
+    ],
+    "answer": "clever",
+    "explanation": "clever means able to solve problems well.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A1.1_1",
+    "skill": "Reading",
+    "level": "A1.1",
+    "type": "reading_mcq",
+    "question": "Why does Mina arrive at nine?",
+    "options": [
+      "It is her usual start time",
+      "The shop opens at ten",
+      "The manager asks her to",
+      "She has a class"
+    ],
+    "answer": "It is her usual start time",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Mina works in a small shop near her home. She arrives at nine every morning. Her new colleague is very friendly, and Mina likes working with her. One day, a customer becomes angry because an item is missing. Mina stays calm and calls the manager. The problem is fixed, and the customer leaves happy.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.1_2",
+    "skill": "Reading",
+    "level": "A1.1",
+    "type": "reading_mcq",
+    "question": "How is Mina’s colleague described?",
+    "options": [
+      "Friendly",
+      "Angry",
+      "Clever",
+      "Afraid"
+    ],
+    "answer": "Friendly",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Mina works in a small shop near her home. She arrives at nine every morning. Her new colleague is very friendly, and Mina likes working with her. One day, a customer becomes angry because an item is missing. Mina stays calm and calls the manager. The problem is fixed, and the customer leaves happy.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.1_3",
+    "skill": "Reading",
+    "level": "A1.1",
+    "type": "reading_mcq",
+    "question": "Why does the customer become angry?",
+    "options": [
+      "An item is missing",
+      "The shop is closed",
+      "Mina is late",
+      "The manager is absent"
+    ],
+    "answer": "An item is missing",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Mina works in a small shop near her home. She arrives at nine every morning. Her new colleague is very friendly, and Mina likes working with her. One day, a customer becomes angry because an item is missing. Mina stays calm and calls the manager. The problem is fixed, and the customer leaves happy.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.1_4",
+    "skill": "Reading",
+    "level": "A1.1",
+    "type": "reading_mcq",
+    "question": "What does Mina do?",
+    "options": [
+      "She calls the manager",
+      "She leaves the shop",
+      "She argues with the customer",
+      "She hides the item"
+    ],
+    "answer": "She calls the manager",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Mina works in a small shop near her home. She arrives at nine every morning. Her new colleague is very friendly, and Mina likes working with her. One day, a customer becomes angry because an item is missing. Mina stays calm and calls the manager. The problem is fixed, and the customer leaves happy.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_A1.2_1",
+    "skill": "Grammar",
+    "level": "A1.2",
+    "type": "grammar_mcq",
+    "question": "Look! The baby ___.",
+    "options": [
+      "is sleeping",
+      "sleeps",
+      "sleep",
+      "is sleep"
+    ],
+    "answer": "is sleeping",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.2_2",
+    "skill": "Grammar",
+    "level": "A1.2",
+    "type": "grammar_mcq",
+    "question": "I usually walk, but today I ___ the bus.",
+    "options": [
+      "am taking",
+      "take",
+      "took",
+      "am take"
+    ],
+    "answer": "am taking",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.2_3",
+    "skill": "Grammar",
+    "level": "A1.2",
+    "type": "grammar_mcq",
+    "question": "We ___ to Alexandria last weekend.",
+    "options": [
+      "went",
+      "go",
+      "have gone",
+      "going"
+    ],
+    "answer": "went",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.2_4",
+    "skill": "Grammar",
+    "level": "A1.2",
+    "type": "grammar_mcq",
+    "question": "Where ___ she live?",
+    "options": [
+      "does",
+      "is",
+      "do",
+      "did"
+    ],
+    "answer": "does",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A1.2_1",
+    "skill": "Vocabulary",
+    "level": "A1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"an exciting experience\"?",
+    "options": [
+      "adventure",
+      "approach",
+      "loud",
+      "secret"
+    ],
+    "answer": "adventure",
+    "explanation": "adventure means an exciting experience.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.2_2",
+    "skill": "Vocabulary",
+    "level": "A1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"move closer to something\"?",
+    "options": [
+      "approach",
+      "adventure",
+      "loud",
+      "secret"
+    ],
+    "answer": "approach",
+    "explanation": "approach means move closer to something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.2_3",
+    "skill": "Vocabulary",
+    "level": "A1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"making a lot of sound\"?",
+    "options": [
+      "loud",
+      "adventure",
+      "approach",
+      "secret"
+    ],
+    "answer": "loud",
+    "explanation": "loud means making a lot of sound.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.2_4",
+    "skill": "Vocabulary",
+    "level": "A1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"something kept unknown to others\"?",
+    "options": [
+      "secret",
+      "adventure",
+      "approach",
+      "loud"
+    ],
+    "answer": "secret",
+    "explanation": "secret means something kept unknown to others.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A1.2_1",
+    "skill": "Reading",
+    "level": "A1.2",
+    "type": "reading_mcq",
+    "question": "Why does Omar join the group?",
+    "options": [
+      "He wants to try something new",
+      "He needs a new job",
+      "He dislikes photography",
+      "He is looking for a teacher"
+    ],
+    "answer": "He wants to try something new",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Omar wants to try something new, so he joins a weekend photography group. On Saturday, the group walks through an old part of the city. They approach a quiet street and take pictures of the buildings. Omar is surprised by how loud the market is nearby. At the end of the day, the group keeps one photo as a secret gift for their teacher.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.2_2",
+    "skill": "Reading",
+    "level": "A1.2",
+    "type": "reading_mcq",
+    "question": "What does the group photograph?",
+    "options": [
+      "Buildings",
+      "Cars",
+      "Animals",
+      "Food"
+    ],
+    "answer": "Buildings",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Omar wants to try something new, so he joins a weekend photography group. On Saturday, the group walks through an old part of the city. They approach a quiet street and take pictures of the buildings. Omar is surprised by how loud the market is nearby. At the end of the day, the group keeps one photo as a secret gift for their teacher.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.2_3",
+    "skill": "Reading",
+    "level": "A1.2",
+    "type": "reading_mcq",
+    "question": "What surprises Omar?",
+    "options": [
+      "The market is loud",
+      "The street is empty",
+      "The teacher is late",
+      "The buildings are new"
+    ],
+    "answer": "The market is loud",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Omar wants to try something new, so he joins a weekend photography group. On Saturday, the group walks through an old part of the city. They approach a quiet street and take pictures of the buildings. Omar is surprised by how loud the market is nearby. At the end of the day, the group keeps one photo as a secret gift for their teacher.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.2_4",
+    "skill": "Reading",
+    "level": "A1.2",
+    "type": "reading_mcq",
+    "question": "What do they keep as a gift?",
+    "options": [
+      "A photo",
+      "A book",
+      "A camera",
+      "A map"
+    ],
+    "answer": "A photo",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Omar wants to try something new, so he joins a weekend photography group. On Saturday, the group walks through an old part of the city. They approach a quiet street and take pictures of the buildings. Omar is surprised by how loud the market is nearby. At the end of the day, the group keeps one photo as a secret gift for their teacher.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_A1.3_1",
+    "skill": "Grammar",
+    "level": "A1.3",
+    "type": "grammar_mcq",
+    "question": "While I ___ TV, the phone rang.",
+    "options": [
+      "was watching",
+      "watched",
+      "am watching",
+      "have watched"
+    ],
+    "answer": "was watching",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.3_2",
+    "skill": "Grammar",
+    "level": "A1.3",
+    "type": "grammar_mcq",
+    "question": "There ___ two chairs in the room.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has"
+    ],
+    "answer": "are",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.3_3",
+    "skill": "Grammar",
+    "level": "A1.3",
+    "type": "grammar_mcq",
+    "question": "We haven’t got ___ milk.",
+    "options": [
+      "any",
+      "some",
+      "a",
+      "many"
+    ],
+    "answer": "any",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A1.3_4",
+    "skill": "Grammar",
+    "level": "A1.3",
+    "type": "grammar_mcq",
+    "question": "___ you swim?",
+    "options": [
+      "Can",
+      "Are",
+      "Do",
+      "Have"
+    ],
+    "answer": "Can",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A1.3_1",
+    "skill": "Vocabulary",
+    "level": "A1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"kind and pleasant toward others\"?",
+    "options": [
+      "friendly",
+      "describe",
+      "library",
+      "habit"
+    ],
+    "answer": "friendly",
+    "explanation": "friendly means kind and pleasant toward others.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.3_2",
+    "skill": "Vocabulary",
+    "level": "A1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"say what someone or something is like\"?",
+    "options": [
+      "describe",
+      "friendly",
+      "library",
+      "habit"
+    ],
+    "answer": "describe",
+    "explanation": "describe means say what someone or something is like.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.3_3",
+    "skill": "Vocabulary",
+    "level": "A1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a place where people can borrow books\"?",
+    "options": [
+      "library",
+      "friendly",
+      "describe",
+      "habit"
+    ],
+    "answer": "library",
+    "explanation": "library means a place where people can borrow books.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A1.3_4",
+    "skill": "Vocabulary",
+    "level": "A1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"something you do regularly\"?",
+    "options": [
+      "habit",
+      "friendly",
+      "describe",
+      "library"
+    ],
+    "answer": "habit",
+    "explanation": "habit means something you do regularly.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A1.3_1",
+    "skill": "Reading",
+    "level": "A1.3",
+    "type": "reading_mcq",
+    "question": "Where does Sara usually go after work?",
+    "options": [
+      "The library",
+      "A school",
+      "A travel office",
+      "A shop"
+    ],
+    "answer": "The library",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Sara has a habit of visiting the library after work. She usually borrows one or two books and reads at home. This week, she wants to improve her English, so she chooses a simple book about travel. The librarian is friendly and describes several other books that may help. Sara decides to take two of them.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.3_2",
+    "skill": "Reading",
+    "level": "A1.3",
+    "type": "reading_mcq",
+    "question": "Why does she choose a travel book?",
+    "options": [
+      "She wants to improve her English",
+      "She is going on holiday tomorrow",
+      "The librarian tells her to",
+      "It has many pictures"
+    ],
+    "answer": "She wants to improve her English",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Sara has a habit of visiting the library after work. She usually borrows one or two books and reads at home. This week, she wants to improve her English, so she chooses a simple book about travel. The librarian is friendly and describes several other books that may help. Sara decides to take two of them.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.3_3",
+    "skill": "Reading",
+    "level": "A1.3",
+    "type": "reading_mcq",
+    "question": "Who describes other books?",
+    "options": [
+      "The librarian",
+      "Sara’s friend",
+      "Her teacher",
+      "A writer"
+    ],
+    "answer": "The librarian",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Sara has a habit of visiting the library after work. She usually borrows one or two books and reads at home. This week, she wants to improve her English, so she chooses a simple book about travel. The librarian is friendly and describes several other books that may help. Sara decides to take two of them.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A1.3_4",
+    "skill": "Reading",
+    "level": "A1.3",
+    "type": "reading_mcq",
+    "question": "How many extra books does Sara take?",
+    "options": [
+      "Two",
+      "One",
+      "Three",
+      "Four"
+    ],
+    "answer": "Two",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Sara has a habit of visiting the library after work. She usually borrows one or two books and reads at home. This week, she wants to improve her English, so she chooses a simple book about travel. The librarian is friendly and describes several other books that may help. Sara decides to take two of them.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_A2.1_1",
+    "skill": "Grammar",
+    "level": "A2.1",
+    "type": "grammar_mcq",
+    "question": "I ___ to Cairo next weekend.",
+    "options": [
+      "am going to travel",
+      "traveling",
+      "have travelled",
+      "am travel"
+    ],
+    "answer": "am going to travel",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.1_2",
+    "skill": "Grammar",
+    "level": "A2.1",
+    "type": "grammar_mcq",
+    "question": "She ___ already finished her homework.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "did"
+    ],
+    "answer": "has",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.1_3",
+    "skill": "Grammar",
+    "level": "A2.1",
+    "type": "grammar_mcq",
+    "question": "Did you ___ the film?",
+    "options": [
+      "enjoy",
+      "enjoyed",
+      "enjoying",
+      "have enjoyed"
+    ],
+    "answer": "enjoy",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.1_4",
+    "skill": "Grammar",
+    "level": "A2.1",
+    "type": "grammar_mcq",
+    "question": "You ___ see a doctor if the pain continues.",
+    "options": [
+      "should",
+      "must to",
+      "can to",
+      "are"
+    ],
+    "answer": "should",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A2.1_1",
+    "skill": "Vocabulary",
+    "level": "A2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a school or institution for study or training\"?",
+    "options": [
+      "academy",
+      "appreciate",
+      "available",
+      "response"
+    ],
+    "answer": "academy",
+    "explanation": "academy means a school or institution for study or training.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.1_2",
+    "skill": "Vocabulary",
+    "level": "A2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"understand the value of something\"?",
+    "options": [
+      "appreciate",
+      "academy",
+      "available",
+      "response"
+    ],
+    "answer": "appreciate",
+    "explanation": "appreciate means understand the value of something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.1_3",
+    "skill": "Vocabulary",
+    "level": "A2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"ready to be used or obtained\"?",
+    "options": [
+      "available",
+      "academy",
+      "appreciate",
+      "response"
+    ],
+    "answer": "available",
+    "explanation": "available means ready to be used or obtained.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.1_4",
+    "skill": "Vocabulary",
+    "level": "A2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"an answer or reaction\"?",
+    "options": [
+      "response",
+      "academy",
+      "appreciate",
+      "available"
+    ],
+    "answer": "response",
+    "explanation": "response means an answer or reaction.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A2.1_1",
+    "skill": "Reading",
+    "level": "A2.1",
+    "type": "reading_mcq",
+    "question": "Why is the new course useful to workers?",
+    "options": [
+      "It is held in the evening",
+      "It is free",
+      "It is online only",
+      "It is shorter"
+    ],
+    "answer": "It is held in the evening",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The local academy recently added an evening course for people who work during the day. The course was not available last year, so many students appreciate the new option. On the first evening, the teacher asks students to write a short response about their goals. Some want better English for work; others want to travel more confidently. The course quickly becomes popular.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.1_2",
+    "skill": "Reading",
+    "level": "A2.1",
+    "type": "reading_mcq",
+    "question": "What do students write about?",
+    "options": [
+      "Their goals",
+      "Their jobs",
+      "Their holidays",
+      "Their teachers"
+    ],
+    "answer": "Their goals",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The local academy recently added an evening course for people who work during the day. The course was not available last year, so many students appreciate the new option. On the first evening, the teacher asks students to write a short response about their goals. Some want better English for work; others want to travel more confidently. The course quickly becomes popular.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.1_3",
+    "skill": "Reading",
+    "level": "A2.1",
+    "type": "reading_mcq",
+    "question": "What does “available” mean here?",
+    "options": [
+      "Ready to be used or joined",
+      "Difficult to find",
+      "Already finished",
+      "Very expensive"
+    ],
+    "answer": "Ready to be used or joined",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The local academy recently added an evening course for people who work during the day. The course was not available last year, so many students appreciate the new option. On the first evening, the teacher asks students to write a short response about their goals. Some want better English for work; others want to travel more confidently. The course quickly becomes popular.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.1_4",
+    "skill": "Reading",
+    "level": "A2.1",
+    "type": "reading_mcq",
+    "question": "What happens to the course?",
+    "options": [
+      "It becomes popular",
+      "It is cancelled",
+      "It moves to mornings",
+      "It becomes a private class"
+    ],
+    "answer": "It becomes popular",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The local academy recently added an evening course for people who work during the day. The course was not available last year, so many students appreciate the new option. On the first evening, the teacher asks students to write a short response about their goals. Some want better English for work; others want to travel more confidently. The course quickly becomes popular.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_A2.2_1",
+    "skill": "Grammar",
+    "level": "A2.2",
+    "type": "grammar_mcq",
+    "question": "I have been ___ for nearly an hour.",
+    "options": [
+      "waiting",
+      "wait",
+      "waited",
+      "to wait"
+    ],
+    "answer": "waiting",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.2_2",
+    "skill": "Grammar",
+    "level": "A2.2",
+    "type": "grammar_mcq",
+    "question": "By the time we arrived, they ___ home.",
+    "options": [
+      "had left",
+      "have left",
+      "left",
+      "are leaving"
+    ],
+    "answer": "had left",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.2_3",
+    "skill": "Grammar",
+    "level": "A2.2",
+    "type": "grammar_mcq",
+    "question": "The emails ___ yesterday afternoon.",
+    "options": [
+      "were sent",
+      "sent",
+      "are sending",
+      "have send"
+    ],
+    "answer": "were sent",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.2_4",
+    "skill": "Grammar",
+    "level": "A2.2",
+    "type": "grammar_mcq",
+    "question": "If it rains, we ___ at home.",
+    "options": [
+      "will stay",
+      "stayed",
+      "would stay",
+      "have stayed"
+    ],
+    "answer": "will stay",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A2.2_1",
+    "skill": "Vocabulary",
+    "level": "A2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"share information or ideas\"?",
+    "options": [
+      "communicate",
+      "purchase",
+      "recommend",
+      "property"
+    ],
+    "answer": "communicate",
+    "explanation": "communicate means share information or ideas.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.2_2",
+    "skill": "Vocabulary",
+    "level": "A2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"buy something\"?",
+    "options": [
+      "purchase",
+      "communicate",
+      "recommend",
+      "property"
+    ],
+    "answer": "purchase",
+    "explanation": "purchase means buy something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.2_3",
+    "skill": "Vocabulary",
+    "level": "A2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"suggest something as a good choice\"?",
+    "options": [
+      "recommend",
+      "communicate",
+      "purchase",
+      "property"
+    ],
+    "answer": "recommend",
+    "explanation": "recommend means suggest something as a good choice.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.2_4",
+    "skill": "Vocabulary",
+    "level": "A2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"something that someone owns\"?",
+    "options": [
+      "property",
+      "communicate",
+      "purchase",
+      "recommend"
+    ],
+    "answer": "property",
+    "explanation": "property means something that someone owns.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A2.2_1",
+    "skill": "Reading",
+    "level": "A2.2",
+    "type": "reading_mcq",
+    "question": "Why does Nadia compare several laptops?",
+    "options": [
+      "She does not want to buy the first one she sees",
+      "She cannot afford any laptop",
+      "She dislikes technology",
+      "Her friend asks her to"
+    ],
+    "answer": "She does not want to buy the first one she sees",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Nadia wanted a new laptop, but she did not want to purchase the first model she saw. She compared several options and asked a friend to recommend one. Her friend suggested a model with a strong battery and enough storage. Nadia also checked whether the shop had the right accessories. After considering everything, she made the purchase.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.2_2",
+    "skill": "Reading",
+    "level": "A2.2",
+    "type": "reading_mcq",
+    "question": "Who recommends a model?",
+    "options": [
+      "Her friend",
+      "A shop manager",
+      "Her teacher",
+      "Her brother"
+    ],
+    "answer": "Her friend",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Nadia wanted a new laptop, but she did not want to purchase the first model she saw. She compared several options and asked a friend to recommend one. Her friend suggested a model with a strong battery and enough storage. Nadia also checked whether the shop had the right accessories. After considering everything, she made the purchase.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.2_3",
+    "skill": "Reading",
+    "level": "A2.2",
+    "type": "reading_mcq",
+    "question": "What does Nadia check at the shop?",
+    "options": [
+      "Whether the accessories are available",
+      "Whether the shop is open",
+      "Whether the laptop is new",
+      "Whether the battery is full"
+    ],
+    "answer": "Whether the accessories are available",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Nadia wanted a new laptop, but she did not want to purchase the first model she saw. She compared several options and asked a friend to recommend one. Her friend suggested a model with a strong battery and enough storage. Nadia also checked whether the shop had the right accessories. After considering everything, she made the purchase.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.2_4",
+    "skill": "Reading",
+    "level": "A2.2",
+    "type": "reading_mcq",
+    "question": "When does she buy the laptop?",
+    "options": [
+      "After considering the options",
+      "Before asking anyone",
+      "Immediately",
+      "After returning home"
+    ],
+    "answer": "After considering the options",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Nadia wanted a new laptop, but she did not want to purchase the first model she saw. She compared several options and asked a friend to recommend one. Her friend suggested a model with a strong battery and enough storage. Nadia also checked whether the shop had the right accessories. After considering everything, she made the purchase.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_A2.3_1",
+    "skill": "Grammar",
+    "level": "A2.3",
+    "type": "grammar_mcq",
+    "question": "He said he ___ tired.",
+    "options": [
+      "was",
+      "is",
+      "has",
+      "will"
+    ],
+    "answer": "was",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.3_2",
+    "skill": "Grammar",
+    "level": "A2.3",
+    "type": "grammar_mcq",
+    "question": "I enjoy ___ early at weekends.",
+    "options": [
+      "getting up",
+      "get up",
+      "to get up",
+      "got up"
+    ],
+    "answer": "getting up",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.3_3",
+    "skill": "Grammar",
+    "level": "A2.3",
+    "type": "grammar_mcq",
+    "question": "I need ___ my passport before I leave.",
+    "options": [
+      "to check",
+      "checking",
+      "check",
+      "checked"
+    ],
+    "answer": "to check",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_A2.3_4",
+    "skill": "Grammar",
+    "level": "A2.3",
+    "type": "grammar_mcq",
+    "question": "The woman ___ lives next door is a doctor.",
+    "options": [
+      "who",
+      "which",
+      "where",
+      "whose"
+    ],
+    "answer": "who",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_A2.3_1",
+    "skill": "Vocabulary",
+    "level": "A2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"successfully reach a goal\"?",
+    "options": [
+      "achieve",
+      "consider",
+      "regard",
+      "various"
+    ],
+    "answer": "achieve",
+    "explanation": "achieve means successfully reach a goal.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.3_2",
+    "skill": "Vocabulary",
+    "level": "A2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"think carefully about something\"?",
+    "options": [
+      "consider",
+      "achieve",
+      "regard",
+      "various"
+    ],
+    "answer": "consider",
+    "explanation": "consider means think carefully about something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.3_3",
+    "skill": "Vocabulary",
+    "level": "A2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"think of or consider\"?",
+    "options": [
+      "regard",
+      "achieve",
+      "consider",
+      "various"
+    ],
+    "answer": "regard",
+    "explanation": "regard means think of or consider.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_A2.3_4",
+    "skill": "Vocabulary",
+    "level": "A2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"several different kinds\"?",
+    "options": [
+      "various",
+      "achieve",
+      "consider",
+      "regard"
+    ],
+    "answer": "various",
+    "explanation": "various means several different kinds.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_A2.3_1",
+    "skill": "Reading",
+    "level": "A2.3",
+    "type": "reading_mcq",
+    "question": "What goal did Karim achieve?",
+    "options": [
+      "Finishing a five-kilometre race",
+      "Becoming a coach",
+      "Winning the race",
+      "Running every day"
+    ],
+    "answer": "Finishing a five-kilometre race",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "After months of practice, Karim achieved his goal of running a five-kilometre race. He had considered quitting several times because training was difficult. His coach reminded him to regard slow progress as normal. On race day, Karim met various runners with different levels of experience. He finished later than some of them, but he was proud of his result.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.3_2",
+    "skill": "Reading",
+    "level": "A2.3",
+    "type": "reading_mcq",
+    "question": "Why had he considered quitting?",
+    "options": [
+      "Training was difficult",
+      "He disliked his coach",
+      "He was injured",
+      "The race was cancelled"
+    ],
+    "answer": "Training was difficult",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "After months of practice, Karim achieved his goal of running a five-kilometre race. He had considered quitting several times because training was difficult. His coach reminded him to regard slow progress as normal. On race day, Karim met various runners with different levels of experience. He finished later than some of them, but he was proud of his result.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.3_3",
+    "skill": "Reading",
+    "level": "A2.3",
+    "type": "reading_mcq",
+    "question": "What advice did his coach give?",
+    "options": [
+      "Slow progress can be normal",
+      "He should stop training",
+      "He must win",
+      "He should run faster"
+    ],
+    "answer": "Slow progress can be normal",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "After months of practice, Karim achieved his goal of running a five-kilometre race. He had considered quitting several times because training was difficult. His coach reminded him to regard slow progress as normal. On race day, Karim met various runners with different levels of experience. He finished later than some of them, but he was proud of his result.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_A2.3_4",
+    "skill": "Reading",
+    "level": "A2.3",
+    "type": "reading_mcq",
+    "question": "How does Karim feel at the end?",
+    "options": [
+      "Proud",
+      "Angry",
+      "Disappointed",
+      "Confused"
+    ],
+    "answer": "Proud",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "After months of practice, Karim achieved his goal of running a five-kilometre race. He had considered quitting several times because training was difficult. His coach reminded him to regard slow progress as normal. On race day, Karim met various runners with different levels of experience. He finished later than some of them, but he was proud of his result.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B1.1_1",
+    "skill": "Grammar",
+    "level": "B1.1",
+    "type": "grammar_mcq",
+    "question": "By Friday, I ___ here for six months.",
+    "options": [
+      "will have been working",
+      "will work",
+      "have worked",
+      "am working"
+    ],
+    "answer": "will have been working",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.1_2",
+    "skill": "Grammar",
+    "level": "B1.1",
+    "type": "grammar_mcq",
+    "question": "She ___ be at home; the lights are on.",
+    "options": [
+      "may",
+      "should to",
+      "must to",
+      "can to"
+    ],
+    "answer": "may",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.1_3",
+    "skill": "Grammar",
+    "level": "B1.1",
+    "type": "grammar_mcq",
+    "question": "The report ___ by Monday.",
+    "options": [
+      "will be finished",
+      "will finish",
+      "is finish",
+      "has finish"
+    ],
+    "answer": "will be finished",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.1_4",
+    "skill": "Grammar",
+    "level": "B1.1",
+    "type": "grammar_mcq",
+    "question": "She said she ___ never seen the place before.",
+    "options": [
+      "had",
+      "has",
+      "was",
+      "would"
+    ],
+    "answer": "had",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B1.1_1",
+    "skill": "Vocabulary",
+    "level": "B1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"worried about something that may happen\"?",
+    "options": [
+      "anxious",
+      "eager",
+      "polite",
+      "seek"
+    ],
+    "answer": "anxious",
+    "explanation": "anxious means worried about something that may happen.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.1_2",
+    "skill": "Vocabulary",
+    "level": "B1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"very interested and excited to do something\"?",
+    "options": [
+      "eager",
+      "anxious",
+      "polite",
+      "seek"
+    ],
+    "answer": "eager",
+    "explanation": "eager means very interested and excited to do something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.1_3",
+    "skill": "Vocabulary",
+    "level": "B1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"showing good manners\"?",
+    "options": [
+      "polite",
+      "anxious",
+      "eager",
+      "seek"
+    ],
+    "answer": "polite",
+    "explanation": "polite means showing good manners.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.1_4",
+    "skill": "Vocabulary",
+    "level": "B1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"look for something\"?",
+    "options": [
+      "seek",
+      "anxious",
+      "eager",
+      "polite"
+    ],
+    "answer": "seek",
+    "explanation": "seek means look for something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B1.1_1",
+    "skill": "Reading",
+    "level": "B1.1",
+    "type": "reading_mcq",
+    "question": "Why is Leila anxious?",
+    "options": [
+      "She must speak to unfamiliar people",
+      "She cannot attend the conference",
+      "She dislikes her colleague",
+      "She has not prepared"
+    ],
+    "answer": "She must speak to unfamiliar people",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Before her first international conference, Leila felt anxious because she had to speak in front of unfamiliar people. She was eager to do well, so she prepared carefully and sought advice from a colleague. During the event, she remained polite even when a speaker challenged her opinion. Afterward, several participants thanked her for answering their questions clearly.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.1_2",
+    "skill": "Reading",
+    "level": "B1.1",
+    "type": "reading_mcq",
+    "question": "What does she seek?",
+    "options": [
+      "Advice",
+      "A new job",
+      "A different conference",
+      "A translator"
+    ],
+    "answer": "Advice",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Before her first international conference, Leila felt anxious because she had to speak in front of unfamiliar people. She was eager to do well, so she prepared carefully and sought advice from a colleague. During the event, she remained polite even when a speaker challenged her opinion. Afterward, several participants thanked her for answering their questions clearly.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.1_3",
+    "skill": "Reading",
+    "level": "B1.1",
+    "type": "reading_mcq",
+    "question": "How does she behave when challenged?",
+    "options": [
+      "Politely",
+      "Angrily",
+      "Silently",
+      "Carelessly"
+    ],
+    "answer": "Politely",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Before her first international conference, Leila felt anxious because she had to speak in front of unfamiliar people. She was eager to do well, so she prepared carefully and sought advice from a colleague. During the event, she remained polite even when a speaker challenged her opinion. Afterward, several participants thanked her for answering their questions clearly.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.1_4",
+    "skill": "Reading",
+    "level": "B1.1",
+    "type": "reading_mcq",
+    "question": "What do participants thank her for?",
+    "options": [
+      "Answering their questions clearly",
+      "Organising the event",
+      "Introducing the speakers",
+      "Giving them advice"
+    ],
+    "answer": "Answering their questions clearly",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Before her first international conference, Leila felt anxious because she had to speak in front of unfamiliar people. She was eager to do well, so she prepared carefully and sought advice from a colleague. During the event, she remained polite even when a speaker challenged her opinion. Afterward, several participants thanked her for answering their questions clearly.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B1.2_1",
+    "skill": "Grammar",
+    "level": "B1.2",
+    "type": "grammar_mcq",
+    "question": "How long ___ you known him?",
+    "options": [
+      "have",
+      "did",
+      "are",
+      "do"
+    ],
+    "answer": "have",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.2_2",
+    "skill": "Grammar",
+    "level": "B1.2",
+    "type": "grammar_mcq",
+    "question": "I love this film, and so ___ my brother.",
+    "options": [
+      "does",
+      "is",
+      "has",
+      "do"
+    ],
+    "answer": "does",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.2_3",
+    "skill": "Grammar",
+    "level": "B1.2",
+    "type": "grammar_mcq",
+    "question": "I suggested ___ by train.",
+    "options": [
+      "travelling",
+      "to travel",
+      "travel",
+      "travelled"
+    ],
+    "answer": "travelling",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.2_4",
+    "skill": "Grammar",
+    "level": "B1.2",
+    "type": "grammar_mcq",
+    "question": "The book ___ you lent me was fascinating.",
+    "options": [
+      "that",
+      "what",
+      "where",
+      "whose"
+    ],
+    "answer": "that",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B1.2_1",
+    "skill": "Vocabulary",
+    "level": "B1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a formal discussion of different views\"?",
+    "options": [
+      "debate",
+      "persuade",
+      "significant",
+      "confident"
+    ],
+    "answer": "debate",
+    "explanation": "debate means a formal discussion of different views.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.2_2",
+    "skill": "Vocabulary",
+    "level": "B1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"make someone agree or do something through reasoning\"?",
+    "options": [
+      "persuade",
+      "debate",
+      "significant",
+      "confident"
+    ],
+    "answer": "persuade",
+    "explanation": "persuade means make someone agree or do something through reasoning.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.2_3",
+    "skill": "Vocabulary",
+    "level": "B1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"important enough to have an effect\"?",
+    "options": [
+      "significant",
+      "debate",
+      "persuade",
+      "confident"
+    ],
+    "answer": "significant",
+    "explanation": "significant means important enough to have an effect.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.2_4",
+    "skill": "Vocabulary",
+    "level": "B1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"sure about your ability or decision\"?",
+    "options": [
+      "confident",
+      "debate",
+      "persuade",
+      "significant"
+    ],
+    "answer": "confident",
+    "explanation": "confident means sure about your ability or decision.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B1.2_1",
+    "skill": "Reading",
+    "level": "B1.2",
+    "type": "reading_mcq",
+    "question": "What was the debate about?",
+    "options": [
+      "Students working while studying",
+      "University fees",
+      "Online classes",
+      "Student accommodation"
+    ],
+    "answer": "Students working while studying",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The university held a public debate about whether students should work while studying. One group argued that part-time work teaches useful skills and builds confidence. The other group said it could distract students from their studies. The discussion was significant because many students already work. In the end, neither side persuaded everyone, but both sides agreed that balance was important.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.2_2",
+    "skill": "Reading",
+    "level": "B1.2",
+    "type": "reading_mcq",
+    "question": "What benefit did one group mention?",
+    "options": [
+      "Useful skills and confidence",
+      "More free time",
+      "Higher grades",
+      "Longer holidays"
+    ],
+    "answer": "Useful skills and confidence",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The university held a public debate about whether students should work while studying. One group argued that part-time work teaches useful skills and builds confidence. The other group said it could distract students from their studies. The discussion was significant because many students already work. In the end, neither side persuaded everyone, but both sides agreed that balance was important.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.2_3",
+    "skill": "Reading",
+    "level": "B1.2",
+    "type": "reading_mcq",
+    "question": "Why was the issue significant?",
+    "options": [
+      "Many students already work",
+      "The university was closing",
+      "Teachers were unemployed",
+      "The debate was televised"
+    ],
+    "answer": "Many students already work",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The university held a public debate about whether students should work while studying. One group argued that part-time work teaches useful skills and builds confidence. The other group said it could distract students from their studies. The discussion was significant because many students already work. In the end, neither side persuaded everyone, but both sides agreed that balance was important.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.2_4",
+    "skill": "Reading",
+    "level": "B1.2",
+    "type": "reading_mcq",
+    "question": "Did one side persuade everyone?",
+    "options": [
+      "No",
+      "Yes",
+      "Only the teachers",
+      "Only the students"
+    ],
+    "answer": "No",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The university held a public debate about whether students should work while studying. One group argued that part-time work teaches useful skills and builds confidence. The other group said it could distract students from their studies. The discussion was significant because many students already work. In the end, neither side persuaded everyone, but both sides agreed that balance was important.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B1.3_1",
+    "skill": "Grammar",
+    "level": "B1.3",
+    "type": "grammar_mcq",
+    "question": "If I ___ about the delay, I would have left earlier.",
+    "options": [
+      "had known",
+      "knew",
+      "have known",
+      "would know"
+    ],
+    "answer": "had known",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.3_2",
+    "skill": "Grammar",
+    "level": "B1.3",
+    "type": "grammar_mcq",
+    "question": "I wish I ___ more time now.",
+    "options": [
+      "had",
+      "have",
+      "would have",
+      "had had"
+    ],
+    "answer": "had",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.3_3",
+    "skill": "Grammar",
+    "level": "B1.3",
+    "type": "grammar_mcq",
+    "question": "___ exhausted, she went straight to bed.",
+    "options": [
+      "Being",
+      "Was",
+      "To be",
+      "Been"
+    ],
+    "answer": "Being",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B1.3_4",
+    "skill": "Grammar",
+    "level": "B1.3",
+    "type": "grammar_mcq",
+    "question": "He apologized ___ being late.",
+    "options": [
+      "for",
+      "to",
+      "with",
+      "at"
+    ],
+    "answer": "for",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B1.3_1",
+    "skill": "Vocabulary",
+    "level": "B1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"official power to make decisions or control something\"?",
+    "options": [
+      "authority",
+      "cooperate",
+      "frustrate",
+      "reputation"
+    ],
+    "answer": "authority",
+    "explanation": "authority means official power to make decisions or control something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.3_2",
+    "skill": "Vocabulary",
+    "level": "B1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"work together toward a shared result\"?",
+    "options": [
+      "cooperate",
+      "authority",
+      "frustrate",
+      "reputation"
+    ],
+    "answer": "cooperate",
+    "explanation": "cooperate means work together toward a shared result.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.3_3",
+    "skill": "Vocabulary",
+    "level": "B1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"make someone feel annoyed because a goal is blocked\"?",
+    "options": [
+      "frustrate",
+      "authority",
+      "cooperate",
+      "reputation"
+    ],
+    "answer": "frustrate",
+    "explanation": "frustrate means make someone feel annoyed because a goal is blocked.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B1.3_4",
+    "skill": "Vocabulary",
+    "level": "B1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"the general opinion people have about someone or something\"?",
+    "options": [
+      "reputation",
+      "authority",
+      "cooperate",
+      "frustrate"
+    ],
+    "answer": "reputation",
+    "explanation": "reputation means the general opinion people have about someone or something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B1.3_1",
+    "skill": "Reading",
+    "level": "B1.3",
+    "type": "reading_mcq",
+    "question": "What did the project ask businesses to do?",
+    "options": [
+      "Cooperate on recycling",
+      "Raise prices",
+      "Hire more staff",
+      "Move to another area"
+    ],
+    "answer": "Cooperate on recycling",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A small community project asked local businesses to cooperate on a recycling scheme. At first, one shop owner refused because she thought the plan would frustrate customers. The project leader explained how the scheme could reduce waste and improve the area’s reputation. After several meetings, the owner changed her mind and joined. The project then expanded to other shops.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.3_2",
+    "skill": "Reading",
+    "level": "B1.3",
+    "type": "reading_mcq",
+    "question": "Why did one owner first refuse?",
+    "options": [
+      "She feared customer frustration",
+      "She disliked the project leader",
+      "She wanted more money",
+      "She had no employees"
+    ],
+    "answer": "She feared customer frustration",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A small community project asked local businesses to cooperate on a recycling scheme. At first, one shop owner refused because she thought the plan would frustrate customers. The project leader explained how the scheme could reduce waste and improve the area’s reputation. After several meetings, the owner changed her mind and joined. The project then expanded to other shops.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.3_3",
+    "skill": "Reading",
+    "level": "B1.3",
+    "type": "reading_mcq",
+    "question": "What did the leader say the scheme could improve?",
+    "options": [
+      "The area’s reputation",
+      "The shop’s location",
+      "Employees’ salaries",
+      "Parking spaces"
+    ],
+    "answer": "The area’s reputation",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A small community project asked local businesses to cooperate on a recycling scheme. At first, one shop owner refused because she thought the plan would frustrate customers. The project leader explained how the scheme could reduce waste and improve the area’s reputation. After several meetings, the owner changed her mind and joined. The project then expanded to other shops.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B1.3_4",
+    "skill": "Reading",
+    "level": "B1.3",
+    "type": "reading_mcq",
+    "question": "What happened later?",
+    "options": [
+      "The project expanded",
+      "The scheme ended",
+      "The owner left the community",
+      "Customers protested"
+    ],
+    "answer": "The project expanded",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A small community project asked local businesses to cooperate on a recycling scheme. At first, one shop owner refused because she thought the plan would frustrate customers. The project leader explained how the scheme could reduce waste and improve the area’s reputation. After several meetings, the owner changed her mind and joined. The project then expanded to other shops.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B2.1_1",
+    "skill": "Grammar",
+    "level": "B2.1",
+    "type": "grammar_mcq",
+    "question": "Despite ___ tired, she finished the report.",
+    "options": [
+      "being",
+      "be",
+      "was",
+      "to be"
+    ],
+    "answer": "being",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.1_2",
+    "skill": "Grammar",
+    "level": "B2.1",
+    "type": "grammar_mcq",
+    "question": "By this time next year, I ___ here for a decade.",
+    "options": [
+      "will have been working",
+      "will work",
+      "have worked",
+      "am working"
+    ],
+    "answer": "will have been working",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.1_3",
+    "skill": "Grammar",
+    "level": "B2.1",
+    "type": "grammar_mcq",
+    "question": "He must have ___ the message.",
+    "options": [
+      "received",
+      "receive",
+      "receiving",
+      "has received"
+    ],
+    "answer": "received",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.1_4",
+    "skill": "Grammar",
+    "level": "B2.1",
+    "type": "grammar_mcq",
+    "question": "The building is believed ___ in 1890.",
+    "options": [
+      "to have been built",
+      "to build",
+      "that it built",
+      "being built"
+    ],
+    "answer": "to have been built",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B2.1_1",
+    "skill": "Vocabulary",
+    "level": "B2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"say that something is not true\"?",
+    "options": [
+      "deny",
+      "emphasize",
+      "perspective",
+      "rational"
+    ],
+    "answer": "deny",
+    "explanation": "deny means say that something is not true.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.1_2",
+    "skill": "Vocabulary",
+    "level": "B2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"give special importance to something\"?",
+    "options": [
+      "emphasize",
+      "deny",
+      "perspective",
+      "rational"
+    ],
+    "answer": "emphasize",
+    "explanation": "emphasize means give special importance to something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.1_3",
+    "skill": "Vocabulary",
+    "level": "B2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a particular way of viewing an issue\"?",
+    "options": [
+      "perspective",
+      "deny",
+      "emphasize",
+      "rational"
+    ],
+    "answer": "perspective",
+    "explanation": "perspective means a particular way of viewing an issue.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.1_4",
+    "skill": "Vocabulary",
+    "level": "B2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"based on clear reasoning\"?",
+    "options": [
+      "rational",
+      "deny",
+      "emphasize",
+      "perspective"
+    ],
+    "answer": "rational",
+    "explanation": "rational means based on clear reasoning.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B2.1_1",
+    "skill": "Reading",
+    "level": "B2.1",
+    "type": "reading_mcq",
+    "question": "What does the researcher emphasize?",
+    "options": [
+      "Online meetings are not automatically more efficient",
+      "Digital tools should be banned",
+      "Face-to-face meetings are always better",
+      "Meetings should be longer"
+    ],
+    "answer": "Online meetings are not automatically more efficient",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "In a recent report, the researcher emphasized that online meetings are not automatically more efficient than face-to-face meetings. She denied that digital tools were the problem themselves. Instead, she argued that the way teams use them matters. From her perspective, rational planning and clear agendas are essential. Without them, meetings can become longer rather than shorter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.1_2",
+    "skill": "Reading",
+    "level": "B2.1",
+    "type": "reading_mcq",
+    "question": "What does she deny?",
+    "options": [
+      "That digital tools themselves are the problem",
+      "That meetings exist",
+      "That teams need agendas",
+      "That planning matters"
+    ],
+    "answer": "That digital tools themselves are the problem",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "In a recent report, the researcher emphasized that online meetings are not automatically more efficient than face-to-face meetings. She denied that digital tools were the problem themselves. Instead, she argued that the way teams use them matters. From her perspective, rational planning and clear agendas are essential. Without them, meetings can become longer rather than shorter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.1_3",
+    "skill": "Reading",
+    "level": "B2.1",
+    "type": "reading_mcq",
+    "question": "What is her perspective?",
+    "options": [
+      "Meeting practices matter",
+      "Technology is useless",
+      "Teams should meet daily",
+      "Agendas waste time"
+    ],
+    "answer": "Meeting practices matter",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "In a recent report, the researcher emphasized that online meetings are not automatically more efficient than face-to-face meetings. She denied that digital tools were the problem themselves. Instead, she argued that the way teams use them matters. From her perspective, rational planning and clear agendas are essential. Without them, meetings can become longer rather than shorter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.1_4",
+    "skill": "Reading",
+    "level": "B2.1",
+    "type": "reading_mcq",
+    "question": "What does “rational” suggest in context?",
+    "options": [
+      "Based on clear reasoning",
+      "Based on emotion",
+      "Very expensive",
+      "Difficult to understand"
+    ],
+    "answer": "Based on clear reasoning",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "In a recent report, the researcher emphasized that online meetings are not automatically more efficient than face-to-face meetings. She denied that digital tools were the problem themselves. Instead, she argued that the way teams use them matters. From her perspective, rational planning and clear agendas are essential. Without them, meetings can become longer rather than shorter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B2.2_1",
+    "skill": "Grammar",
+    "level": "B2.2",
+    "type": "grammar_mcq",
+    "question": "The woman ___ car was stolen called the police.",
+    "options": [
+      "whose",
+      "which",
+      "who",
+      "whom"
+    ],
+    "answer": "whose",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.2_2",
+    "skill": "Grammar",
+    "level": "B2.2",
+    "type": "grammar_mcq",
+    "question": "She is very good ___ explaining complex ideas.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "for"
+    ],
+    "answer": "at",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.2_3",
+    "skill": "Grammar",
+    "level": "B2.2",
+    "type": "grammar_mcq",
+    "question": "I had my car ___ yesterday.",
+    "options": [
+      "serviced",
+      "service",
+      "servicing",
+      "to service"
+    ],
+    "answer": "serviced",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.2_4",
+    "skill": "Grammar",
+    "level": "B2.2",
+    "type": "grammar_mcq",
+    "question": "The proposal was carefully ___ before approval.",
+    "options": [
+      "reviewed",
+      "review",
+      "reviewing",
+      "to review"
+    ],
+    "answer": "reviewed",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B2.2_1",
+    "skill": "Vocabulary",
+    "level": "B2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"travel regularly between home and work or study\"?",
+    "options": [
+      "commute",
+      "convince",
+      "investigate",
+      "sincere"
+    ],
+    "answer": "commute",
+    "explanation": "commute means travel regularly between home and work or study.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.2_2",
+    "skill": "Vocabulary",
+    "level": "B2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"make someone believe that something is true\"?",
+    "options": [
+      "convince",
+      "commute",
+      "investigate",
+      "sincere"
+    ],
+    "answer": "convince",
+    "explanation": "convince means make someone believe that something is true.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.2_3",
+    "skill": "Vocabulary",
+    "level": "B2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"examine something carefully to discover facts\"?",
+    "options": [
+      "investigate",
+      "commute",
+      "convince",
+      "sincere"
+    ],
+    "answer": "investigate",
+    "explanation": "investigate means examine something carefully to discover facts.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.2_4",
+    "skill": "Vocabulary",
+    "level": "B2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"honest and genuine in feeling\"?",
+    "options": [
+      "sincere",
+      "commute",
+      "convince",
+      "investigate"
+    ],
+    "answer": "sincere",
+    "explanation": "sincere means honest and genuine in feeling.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B2.2_1",
+    "skill": "Reading",
+    "level": "B2.2",
+    "type": "reading_mcq",
+    "question": "How does Daniel usually travel to work?",
+    "options": [
+      "By train",
+      "By car",
+      "On foot",
+      "By bus"
+    ],
+    "answer": "By train",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Every morning, Daniel commutes by train to the city centre. A recent survey convinced him that working remotely two days a week would save time. His company therefore asked managers to investigate which roles could be done from home. The process was not simple, because some employees need equipment at the workplace. The final policy was announced after several weeks of discussion.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.2_2",
+    "skill": "Reading",
+    "level": "B2.2",
+    "type": "reading_mcq",
+    "question": "What convinced him to work remotely?",
+    "options": [
+      "A survey",
+      "His manager",
+      "A new train route",
+      "A salary increase"
+    ],
+    "answer": "A survey",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Every morning, Daniel commutes by train to the city centre. A recent survey convinced him that working remotely two days a week would save time. His company therefore asked managers to investigate which roles could be done from home. The process was not simple, because some employees need equipment at the workplace. The final policy was announced after several weeks of discussion.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.2_3",
+    "skill": "Reading",
+    "level": "B2.2",
+    "type": "reading_mcq",
+    "question": "Why was the policy difficult to design?",
+    "options": [
+      "Some employees need workplace equipment",
+      "Nobody wanted remote work",
+      "The office was closed",
+      "Trains were unreliable"
+    ],
+    "answer": "Some employees need workplace equipment",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Every morning, Daniel commutes by train to the city centre. A recent survey convinced him that working remotely two days a week would save time. His company therefore asked managers to investigate which roles could be done from home. The process was not simple, because some employees need equipment at the workplace. The final policy was announced after several weeks of discussion.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.2_4",
+    "skill": "Reading",
+    "level": "B2.2",
+    "type": "reading_mcq",
+    "question": "What did managers have to do?",
+    "options": [
+      "Investigate which roles could be remote",
+      "Move employees to another city",
+      "Buy new trains",
+      "Write a newspaper article"
+    ],
+    "answer": "Investigate which roles could be remote",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Every morning, Daniel commutes by train to the city centre. A recent survey convinced him that working remotely two days a week would save time. His company therefore asked managers to investigate which roles could be done from home. The process was not simple, because some employees need equipment at the workplace. The final policy was announced after several weeks of discussion.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_B2.3_1",
+    "skill": "Grammar",
+    "level": "B2.3",
+    "type": "grammar_mcq",
+    "question": "She has ___ finished the report, so you can read it now.",
+    "options": [
+      "already",
+      "still",
+      "yet",
+      "ever"
+    ],
+    "answer": "already",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.3_2",
+    "skill": "Grammar",
+    "level": "B2.3",
+    "type": "grammar_mcq",
+    "question": "I don’t like coffee, and neither ___ my sister.",
+    "options": [
+      "does",
+      "is",
+      "has",
+      "do"
+    ],
+    "answer": "does",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.3_3",
+    "skill": "Grammar",
+    "level": "B2.3",
+    "type": "grammar_mcq",
+    "question": "The more carefully you plan, ___ the result will be.",
+    "options": [
+      "the better",
+      "better",
+      "the best",
+      "best"
+    ],
+    "answer": "the better",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_B2.3_4",
+    "skill": "Grammar",
+    "level": "B2.3",
+    "type": "grammar_mcq",
+    "question": "He spoke so quietly that I could ___ hear him.",
+    "options": [
+      "barely",
+      "complete",
+      "near",
+      "hard"
+    ],
+    "answer": "barely",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_B2.3_1",
+    "skill": "Vocabulary",
+    "level": "B2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"successfully complete something\"?",
+    "options": [
+      "accomplish",
+      "approximate",
+      "poverty",
+      "statistic"
+    ],
+    "answer": "accomplish",
+    "explanation": "accomplish means successfully complete something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.3_2",
+    "skill": "Vocabulary",
+    "level": "B2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"close to an exact amount or number\"?",
+    "options": [
+      "approximate",
+      "accomplish",
+      "poverty",
+      "statistic"
+    ],
+    "answer": "approximate",
+    "explanation": "approximate means close to an exact amount or number.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.3_3",
+    "skill": "Vocabulary",
+    "level": "B2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"the state of being very poor\"?",
+    "options": [
+      "poverty",
+      "accomplish",
+      "approximate",
+      "statistic"
+    ],
+    "answer": "poverty",
+    "explanation": "poverty means the state of being very poor.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_B2.3_4",
+    "skill": "Vocabulary",
+    "level": "B2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a number used to describe facts or trends\"?",
+    "options": [
+      "statistic",
+      "accomplish",
+      "approximate",
+      "poverty"
+    ],
+    "answer": "statistic",
+    "explanation": "statistic means a number used to describe facts or trends.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_B2.3_1",
+    "skill": "Reading",
+    "level": "B2.3",
+    "type": "reading_mcq",
+    "question": "What had the programme accomplished?",
+    "options": [
+      "Most of its targets",
+      "All of its targets",
+      "None of its targets",
+      "Only its financial target"
+    ],
+    "answer": "Most of its targets",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The research team reported that the programme had accomplished most of its targets, although the final figures were only approximate. The report included a statistic showing a fall in unemployment, but the authors warned that the number did not explain every change in the economy. They also noted that poverty had declined in some areas while remaining high in others.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.3_2",
+    "skill": "Reading",
+    "level": "B2.3",
+    "type": "reading_mcq",
+    "question": "Why were some figures approximate?",
+    "options": [
+      "They were not exact",
+      "The data were secret",
+      "The researchers were absent",
+      "The report was unfinished"
+    ],
+    "answer": "They were not exact",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The research team reported that the programme had accomplished most of its targets, although the final figures were only approximate. The report included a statistic showing a fall in unemployment, but the authors warned that the number did not explain every change in the economy. They also noted that poverty had declined in some areas while remaining high in others.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.3_3",
+    "skill": "Reading",
+    "level": "B2.3",
+    "type": "reading_mcq",
+    "question": "What did the statistic show?",
+    "options": [
+      "A fall in unemployment",
+      "Higher salaries",
+      "More exports",
+      "A rise in poverty"
+    ],
+    "answer": "A fall in unemployment",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The research team reported that the programme had accomplished most of its targets, although the final figures were only approximate. The report included a statistic showing a fall in unemployment, but the authors warned that the number did not explain every change in the economy. They also noted that poverty had declined in some areas while remaining high in others.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_B2.3_4",
+    "skill": "Reading",
+    "level": "B2.3",
+    "type": "reading_mcq",
+    "question": "What remained true about poverty?",
+    "options": [
+      "It was still high in some areas",
+      "It had disappeared everywhere",
+      "It increased everywhere",
+      "It was not measured"
+    ],
+    "answer": "It was still high in some areas",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The research team reported that the programme had accomplished most of its targets, although the final figures were only approximate. The report included a statistic showing a fall in unemployment, but the authors warned that the number did not explain every change in the economy. They also noted that poverty had declined in some areas while remaining high in others.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C1.1_1",
+    "skill": "Grammar",
+    "level": "C1.1",
+    "type": "grammar_mcq",
+    "question": "If he ___ more careful, he wouldn’t be in trouble now.",
+    "options": [
+      "had been",
+      "was",
+      "has been",
+      "would be"
+    ],
+    "answer": "had been",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.1_2",
+    "skill": "Grammar",
+    "level": "C1.1",
+    "type": "grammar_mcq",
+    "question": "Had they ___ earlier, they would have avoided the delay.",
+    "options": [
+      "left",
+      "leave",
+      "had left",
+      "leaving"
+    ],
+    "answer": "left",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.1_3",
+    "skill": "Grammar",
+    "level": "C1.1",
+    "type": "grammar_mcq",
+    "question": "All things ___, it was a reasonable decision.",
+    "options": [
+      "considered",
+      "considering",
+      "consider",
+      "were considered"
+    ],
+    "answer": "considered",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.1_4",
+    "skill": "Grammar",
+    "level": "C1.1",
+    "type": "grammar_mcq",
+    "question": "The first report, ___ in June, was later withdrawn.",
+    "options": [
+      "published",
+      "publishing",
+      "was published",
+      "to publish"
+    ],
+    "answer": "published",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C1.1_1",
+    "skill": "Vocabulary",
+    "level": "C1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"having a strong desire to succeed\"?",
+    "options": [
+      "ambitious",
+      "enthusiastic",
+      "dialect",
+      "ecosystem"
+    ],
+    "answer": "ambitious",
+    "explanation": "ambitious means having a strong desire to succeed.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.1_2",
+    "skill": "Vocabulary",
+    "level": "C1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"showing strong interest or excitement\"?",
+    "options": [
+      "enthusiastic",
+      "ambitious",
+      "dialect",
+      "ecosystem"
+    ],
+    "answer": "enthusiastic",
+    "explanation": "enthusiastic means showing strong interest or excitement.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.1_3",
+    "skill": "Vocabulary",
+    "level": "C1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a form of a language used by a particular region or group\"?",
+    "options": [
+      "dialect",
+      "ambitious",
+      "enthusiastic",
+      "ecosystem"
+    ],
+    "answer": "dialect",
+    "explanation": "dialect means a form of a language used by a particular region or group.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.1_4",
+    "skill": "Vocabulary",
+    "level": "C1.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a community of living things and their environment\"?",
+    "options": [
+      "ecosystem",
+      "ambitious",
+      "enthusiastic",
+      "dialect"
+    ],
+    "answer": "ecosystem",
+    "explanation": "ecosystem means a community of living things and their environment.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C1.1_1",
+    "skill": "Reading",
+    "level": "C1.1",
+    "type": "reading_mcq",
+    "question": "Why did residents support the plan?",
+    "options": [
+      "They wanted to restore the wetland",
+      "They wanted new buildings",
+      "They disliked the scientists",
+      "They wanted to remove the ecosystem"
+    ],
+    "answer": "They wanted to restore the wetland",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The city’s ambitious plan to restore an old wetland attracted enthusiastic support from local residents. Scientists explained that the area functioned as an ecosystem rather than simply as unused land. They also noted that the community used several dialects, so public meetings had to be accessible to different groups. The project moved slowly, but its supporters believed the long-term benefits justified the effort.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.1_2",
+    "skill": "Reading",
+    "level": "C1.1",
+    "type": "reading_mcq",
+    "question": "How did scientists describe the wetland?",
+    "options": [
+      "As an ecosystem",
+      "As unused land",
+      "As a private park",
+      "As a construction site"
+    ],
+    "answer": "As an ecosystem",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The city’s ambitious plan to restore an old wetland attracted enthusiastic support from local residents. Scientists explained that the area functioned as an ecosystem rather than simply as unused land. They also noted that the community used several dialects, so public meetings had to be accessible to different groups. The project moved slowly, but its supporters believed the long-term benefits justified the effort.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.1_3",
+    "skill": "Reading",
+    "level": "C1.1",
+    "type": "reading_mcq",
+    "question": "Why did meetings need to be accessible?",
+    "options": [
+      "The community used several dialects",
+      "The meetings were online",
+      "The residents were children",
+      "The scientists spoke different languages"
+    ],
+    "answer": "The community used several dialects",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The city’s ambitious plan to restore an old wetland attracted enthusiastic support from local residents. Scientists explained that the area functioned as an ecosystem rather than simply as unused land. They also noted that the community used several dialects, so public meetings had to be accessible to different groups. The project moved slowly, but its supporters believed the long-term benefits justified the effort.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.1_4",
+    "skill": "Reading",
+    "level": "C1.1",
+    "type": "reading_mcq",
+    "question": "What did supporters believe?",
+    "options": [
+      "The long-term benefits were worth the effort",
+      "The project should be cancelled",
+      "The work should finish immediately",
+      "The wetland had no value"
+    ],
+    "answer": "The long-term benefits were worth the effort",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "The city’s ambitious plan to restore an old wetland attracted enthusiastic support from local residents. Scientists explained that the area functioned as an ecosystem rather than simply as unused land. They also noted that the community used several dialects, so public meetings had to be accessible to different groups. The project moved slowly, but its supporters believed the long-term benefits justified the effort.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C1.2_1",
+    "skill": "Grammar",
+    "level": "C1.2",
+    "type": "grammar_mcq",
+    "question": "I would rather you ___ tomorrow.",
+    "options": [
+      "came",
+      "come",
+      "will come",
+      "had come"
+    ],
+    "answer": "came",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.2_2",
+    "skill": "Grammar",
+    "level": "C1.2",
+    "type": "grammar_mcq",
+    "question": "No sooner ___ the meeting begun than the lights went out.",
+    "options": [
+      "had",
+      "has",
+      "did",
+      "was"
+    ],
+    "answer": "had",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.2_3",
+    "skill": "Grammar",
+    "level": "C1.2",
+    "type": "grammar_mcq",
+    "question": "The policy, ___ purpose is unclear, was criticised.",
+    "options": [
+      "whose",
+      "which",
+      "that",
+      "what"
+    ],
+    "answer": "whose",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.2_4",
+    "skill": "Grammar",
+    "level": "C1.2",
+    "type": "grammar_mcq",
+    "question": "She is likely ___ the offer if the terms improve.",
+    "options": [
+      "to accept",
+      "accepting",
+      "accept",
+      "accepted"
+    ],
+    "answer": "to accept",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C1.2_1",
+    "skill": "Vocabulary",
+    "level": "C1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"expect something to happen and prepare for it\"?",
+    "options": [
+      "anticipate",
+      "deliberate",
+      "independence",
+      "underlying"
+    ],
+    "answer": "anticipate",
+    "explanation": "anticipate means expect something to happen and prepare for it.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.2_2",
+    "skill": "Vocabulary",
+    "level": "C1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"done intentionally and carefully\"?",
+    "options": [
+      "deliberate",
+      "anticipate",
+      "independence",
+      "underlying"
+    ],
+    "answer": "deliberate",
+    "explanation": "deliberate means done intentionally and carefully.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.2_3",
+    "skill": "Vocabulary",
+    "level": "C1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"the state of being free to govern or act for yourself\"?",
+    "options": [
+      "independence",
+      "anticipate",
+      "deliberate",
+      "underlying"
+    ],
+    "answer": "independence",
+    "explanation": "independence means the state of being free to govern or act for yourself.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.2_4",
+    "skill": "Vocabulary",
+    "level": "C1.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"existing beneath the surface or stated idea\"?",
+    "options": [
+      "underlying",
+      "anticipate",
+      "deliberate",
+      "independence"
+    ],
+    "answer": "underlying",
+    "explanation": "underlying means existing beneath the surface or stated idea.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C1.2_1",
+    "skill": "Reading",
+    "level": "C1.2",
+    "type": "reading_mcq",
+    "question": "What do good managers do according to the passage?",
+    "options": [
+      "Anticipate problems",
+      "Ignore small failures",
+      "Avoid inspections",
+      "Change staff frequently"
+    ],
+    "answer": "Anticipate problems",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Good managers anticipate problems rather than simply react to them. In one factory, the supervisor deliberately changed the maintenance schedule after noticing a pattern of small equipment failures. The change initially seemed unnecessary, but an inspection later revealed an underlying defect. The company avoided a larger breakdown and gained a clearer understanding of how minor warning signs can matter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.2_2",
+    "skill": "Reading",
+    "level": "C1.2",
+    "type": "reading_mcq",
+    "question": "Why did the supervisor change the schedule?",
+    "options": [
+      "He noticed a pattern of failures",
+      "The workers asked him to",
+      "The factory was closing",
+      "The equipment was new"
+    ],
+    "answer": "He noticed a pattern of failures",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Good managers anticipate problems rather than simply react to them. In one factory, the supervisor deliberately changed the maintenance schedule after noticing a pattern of small equipment failures. The change initially seemed unnecessary, but an inspection later revealed an underlying defect. The company avoided a larger breakdown and gained a clearer understanding of how minor warning signs can matter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.2_3",
+    "skill": "Reading",
+    "level": "C1.2",
+    "type": "reading_mcq",
+    "question": "What did the inspection reveal?",
+    "options": [
+      "An underlying defect",
+      "A successful repair",
+      "A new machine",
+      "A staffing problem"
+    ],
+    "answer": "An underlying defect",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Good managers anticipate problems rather than simply react to them. In one factory, the supervisor deliberately changed the maintenance schedule after noticing a pattern of small equipment failures. The change initially seemed unnecessary, but an inspection later revealed an underlying defect. The company avoided a larger breakdown and gained a clearer understanding of how minor warning signs can matter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.2_4",
+    "skill": "Reading",
+    "level": "C1.2",
+    "type": "reading_mcq",
+    "question": "What did the company avoid?",
+    "options": [
+      "A larger breakdown",
+      "An inspection",
+      "A schedule change",
+      "A warning sign"
+    ],
+    "answer": "A larger breakdown",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "Good managers anticipate problems rather than simply react to them. In one factory, the supervisor deliberately changed the maintenance schedule after noticing a pattern of small equipment failures. The change initially seemed unnecessary, but an inspection later revealed an underlying defect. The company avoided a larger breakdown and gained a clearer understanding of how minor warning signs can matter.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C1.3_1",
+    "skill": "Grammar",
+    "level": "C1.3",
+    "type": "grammar_mcq",
+    "question": "However difficult the task ___, we must finish it.",
+    "options": [
+      "may be",
+      "may",
+      "is being",
+      "would"
+    ],
+    "answer": "may be",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.3_2",
+    "skill": "Grammar",
+    "level": "C1.3",
+    "type": "grammar_mcq",
+    "question": "What I object to ___ the lack of evidence.",
+    "options": [
+      "is",
+      "are",
+      "be",
+      "being"
+    ],
+    "answer": "is",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.3_3",
+    "skill": "Grammar",
+    "level": "C1.3",
+    "type": "grammar_mcq",
+    "question": "The person ___ I spoke to yesterday had already left.",
+    "options": [
+      "to whom",
+      "who to",
+      "which",
+      "whose"
+    ],
+    "answer": "to whom",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C1.3_4",
+    "skill": "Grammar",
+    "level": "C1.3",
+    "type": "grammar_mcq",
+    "question": "She left without ___ a word.",
+    "options": [
+      "saying",
+      "say",
+      "to say",
+      "said"
+    ],
+    "answer": "saying",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C1.3_1",
+    "skill": "Vocabulary",
+    "level": "C1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a major and usually rapid change in a system\"?",
+    "options": [
+      "revolution",
+      "suspicious",
+      "tremendous",
+      "utilize"
+    ],
+    "answer": "revolution",
+    "explanation": "revolution means a major and usually rapid change in a system.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.3_2",
+    "skill": "Vocabulary",
+    "level": "C1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"feeling that something may be wrong or dishonest\"?",
+    "options": [
+      "suspicious",
+      "revolution",
+      "tremendous",
+      "utilize"
+    ],
+    "answer": "suspicious",
+    "explanation": "suspicious means feeling that something may be wrong or dishonest.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.3_3",
+    "skill": "Vocabulary",
+    "level": "C1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"very great in size, degree, or effect\"?",
+    "options": [
+      "tremendous",
+      "revolution",
+      "suspicious",
+      "utilize"
+    ],
+    "answer": "tremendous",
+    "explanation": "tremendous means very great in size, degree, or effect.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C1.3_4",
+    "skill": "Vocabulary",
+    "level": "C1.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"use something for a particular purpose\"?",
+    "options": [
+      "utilize",
+      "revolution",
+      "suspicious",
+      "tremendous"
+    ],
+    "answer": "utilize",
+    "explanation": "utilize means use something for a particular purpose.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C1.3_1",
+    "skill": "Reading",
+    "level": "C1.3",
+    "type": "reading_mcq",
+    "question": "How is a revolution sometimes described?",
+    "options": [
+      "As a sudden break with the past",
+      "As a slow economic plan",
+      "As a minor reform",
+      "As a private disagreement"
+    ],
+    "answer": "As a sudden break with the past",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A political revolution is often described as a sudden break with the past, but historians sometimes emphasize continuities as well. In one country, independence changed the formal structure of government, yet several older institutions remained in place. Some observers were suspicious of the new leadership, while others viewed the change as tremendous progress. The historical record therefore resists a simple interpretation.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.3_2",
+    "skill": "Reading",
+    "level": "C1.3",
+    "type": "reading_mcq",
+    "question": "What changed after independence?",
+    "options": [
+      "The formal government structure",
+      "Every institution",
+      "The language of the country",
+      "The entire population"
+    ],
+    "answer": "The formal government structure",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A political revolution is often described as a sudden break with the past, but historians sometimes emphasize continuities as well. In one country, independence changed the formal structure of government, yet several older institutions remained in place. Some observers were suspicious of the new leadership, while others viewed the change as tremendous progress. The historical record therefore resists a simple interpretation.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.3_3",
+    "skill": "Reading",
+    "level": "C1.3",
+    "type": "reading_mcq",
+    "question": "How did observers react?",
+    "options": [
+      "Some were suspicious and others optimistic",
+      "Everyone agreed",
+      "Everyone opposed the change",
+      "Nobody noticed"
+    ],
+    "answer": "Some were suspicious and others optimistic",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A political revolution is often described as a sudden break with the past, but historians sometimes emphasize continuities as well. In one country, independence changed the formal structure of government, yet several older institutions remained in place. Some observers were suspicious of the new leadership, while others viewed the change as tremendous progress. The historical record therefore resists a simple interpretation.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C1.3_4",
+    "skill": "Reading",
+    "level": "C1.3",
+    "type": "reading_mcq",
+    "question": "What does the final sentence suggest?",
+    "options": [
+      "The history is more complex than one simple explanation",
+      "The revolution failed completely",
+      "The old institutions disappeared",
+      "The new government was universally accepted"
+    ],
+    "answer": "The history is more complex than one simple explanation",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A political revolution is often described as a sudden break with the past, but historians sometimes emphasize continuities as well. In one country, independence changed the formal structure of government, yet several older institutions remained in place. Some observers were suspicious of the new leadership, while others viewed the change as tremendous progress. The historical record therefore resists a simple interpretation.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C2.1_1",
+    "skill": "Grammar",
+    "level": "C2.1",
+    "type": "grammar_mcq",
+    "question": "Had it not been for your advice, I ___ the wrong decision.",
+    "options": [
+      "would have made",
+      "would make",
+      "made",
+      "had made"
+    ],
+    "answer": "would have made",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.1_2",
+    "skill": "Grammar",
+    "level": "C2.1",
+    "type": "grammar_mcq",
+    "question": "He is said ___ the documents before the meeting.",
+    "options": [
+      "to have reviewed",
+      "to review",
+      "reviewing",
+      "that he reviewed"
+    ],
+    "answer": "to have reviewed",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.1_3",
+    "skill": "Grammar",
+    "level": "C2.1",
+    "type": "grammar_mcq",
+    "question": "She denied ___ the figures.",
+    "options": [
+      "having altered",
+      "alter",
+      "to alter",
+      "altered"
+    ],
+    "answer": "having altered",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.1_4",
+    "skill": "Grammar",
+    "level": "C2.1",
+    "type": "grammar_mcq",
+    "question": "The two sides eventually reached an ___ after weeks of negotiation.",
+    "options": [
+      "agreement",
+      "agreed",
+      "agreeing",
+      "to agree"
+    ],
+    "answer": "agreement",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C2.1_1",
+    "skill": "Vocabulary",
+    "level": "C2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"highly developed or complex\"?",
+    "options": [
+      "sophisticated",
+      "authoritative",
+      "concede",
+      "equilibrium"
+    ],
+    "answer": "sophisticated",
+    "explanation": "sophisticated means highly developed or complex.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.1_2",
+    "skill": "Vocabulary",
+    "level": "C2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"showing knowledge and confidence that makes people trust the information\"?",
+    "options": [
+      "authoritative",
+      "sophisticated",
+      "concede",
+      "equilibrium"
+    ],
+    "answer": "authoritative",
+    "explanation": "authoritative means showing knowledge and confidence that makes people trust the information.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.1_3",
+    "skill": "Vocabulary",
+    "level": "C2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"admit that something is true, usually unwillingly\"?",
+    "options": [
+      "concede",
+      "sophisticated",
+      "authoritative",
+      "equilibrium"
+    ],
+    "answer": "concede",
+    "explanation": "concede means admit that something is true, usually unwillingly.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.1_4",
+    "skill": "Vocabulary",
+    "level": "C2.1",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a state of balance\"?",
+    "options": [
+      "equilibrium",
+      "sophisticated",
+      "authoritative",
+      "concede"
+    ],
+    "answer": "equilibrium",
+    "explanation": "equilibrium means a state of balance.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C2.1_1",
+    "skill": "Reading",
+    "level": "C2.1",
+    "type": "reading_mcq",
+    "question": "What does the review concede?",
+    "options": [
+      "The original evidence was incomplete",
+      "The dispute was over",
+      "All evidence was reliable",
+      "The findings were irrelevant"
+    ],
+    "answer": "The original evidence was incomplete",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A sophisticated analysis of the dispute requires more than a list of competing claims. One authoritative review conceded that the original evidence was incomplete, but it argued that the balance of findings still favoured one interpretation. The reviewers also noted that the situation was far from stable: economic pressure and public expectations remained in tension. In their view, equilibrium would depend on several conditions changing at once.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.1_2",
+    "skill": "Reading",
+    "level": "C2.1",
+    "type": "reading_mcq",
+    "question": "What does the review favour?",
+    "options": [
+      "One interpretation",
+      "Neither interpretation",
+      "A completely new issue",
+      "The absence of evidence"
+    ],
+    "answer": "One interpretation",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A sophisticated analysis of the dispute requires more than a list of competing claims. One authoritative review conceded that the original evidence was incomplete, but it argued that the balance of findings still favoured one interpretation. The reviewers also noted that the situation was far from stable: economic pressure and public expectations remained in tension. In their view, equilibrium would depend on several conditions changing at once.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.1_3",
+    "skill": "Reading",
+    "level": "C2.1",
+    "type": "reading_mcq",
+    "question": "Why is the situation unstable?",
+    "options": [
+      "Economic pressure and public expectations remain in tension",
+      "The review is too long",
+      "The evidence is secret",
+      "The public has no expectations"
+    ],
+    "answer": "Economic pressure and public expectations remain in tension",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A sophisticated analysis of the dispute requires more than a list of competing claims. One authoritative review conceded that the original evidence was incomplete, but it argued that the balance of findings still favoured one interpretation. The reviewers also noted that the situation was far from stable: economic pressure and public expectations remained in tension. In their view, equilibrium would depend on several conditions changing at once.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.1_4",
+    "skill": "Reading",
+    "level": "C2.1",
+    "type": "reading_mcq",
+    "question": "What might equilibrium depend on?",
+    "options": [
+      "Several conditions changing together",
+      "One person changing their view",
+      "More publicity",
+      "A shorter report"
+    ],
+    "answer": "Several conditions changing together",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A sophisticated analysis of the dispute requires more than a list of competing claims. One authoritative review conceded that the original evidence was incomplete, but it argued that the balance of findings still favoured one interpretation. The reviewers also noted that the situation was far from stable: economic pressure and public expectations remained in tension. In their view, equilibrium would depend on several conditions changing at once.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C2.2_1",
+    "skill": "Grammar",
+    "level": "C2.2",
+    "type": "grammar_mcq",
+    "question": "I wish I ___ the offer when I had the chance.",
+    "options": [
+      "had accepted",
+      "accepted",
+      "would accept",
+      "have accepted"
+    ],
+    "answer": "had accepted",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.2_2",
+    "skill": "Grammar",
+    "level": "C2.2",
+    "type": "grammar_mcq",
+    "question": "The decision was based ___ evidence rather than opinion.",
+    "options": [
+      "on",
+      "at",
+      "with",
+      "for"
+    ],
+    "answer": "on",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.2_3",
+    "skill": "Grammar",
+    "level": "C2.2",
+    "type": "grammar_mcq",
+    "question": "He objected to ___ treated differently from the others.",
+    "options": [
+      "being",
+      "be",
+      "have been",
+      "to be"
+    ],
+    "answer": "being",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.2_4",
+    "skill": "Grammar",
+    "level": "C2.2",
+    "type": "grammar_mcq",
+    "question": "The report raises several issues, some of ___ remain unresolved.",
+    "options": [
+      "which",
+      "what",
+      "that",
+      "whose"
+    ],
+    "answer": "which",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C2.2_1",
+    "skill": "Vocabulary",
+    "level": "C2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"using careful examination of parts and relationships\"?",
+    "options": [
+      "analytic",
+      "cognitive",
+      "theoretical",
+      "legitimate"
+    ],
+    "answer": "analytic",
+    "explanation": "analytic means using careful examination of parts and relationships.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.2_2",
+    "skill": "Vocabulary",
+    "level": "C2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"related to thinking and understanding\"?",
+    "options": [
+      "cognitive",
+      "analytic",
+      "theoretical",
+      "legitimate"
+    ],
+    "answer": "cognitive",
+    "explanation": "cognitive means related to thinking and understanding.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.2_3",
+    "skill": "Vocabulary",
+    "level": "C2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"concerned with ideas or principles rather than practical use\"?",
+    "options": [
+      "theoretical",
+      "analytic",
+      "cognitive",
+      "legitimate"
+    ],
+    "answer": "theoretical",
+    "explanation": "theoretical means concerned with ideas or principles rather than practical use.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.2_4",
+    "skill": "Vocabulary",
+    "level": "C2.2",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"lawful, valid, or acceptable\"?",
+    "options": [
+      "legitimate",
+      "analytic",
+      "cognitive",
+      "theoretical"
+    ],
+    "answer": "legitimate",
+    "explanation": "legitimate means lawful, valid, or acceptable.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C2.2_1",
+    "skill": "Reading",
+    "level": "C2.2",
+    "type": "reading_mcq",
+    "question": "What does the analytic approach distinguish?",
+    "options": [
+      "Theoretical desirability from practical implementation",
+      "Students from teachers",
+      "Old policies from new buildings",
+      "Grammar from vocabulary"
+    ],
+    "answer": "Theoretical desirability from practical implementation",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "An analytic approach to educational policy distinguishes between what is theoretically desirable and what can realistically be implemented. A recent paper argued that cognitive development should remain central to curriculum design, while acknowledging that institutions face practical constraints. The authors also questioned whether every widely used measure was legitimate. Their conclusion was cautious: policy should be evidence-based, but evidence itself must be examined critically.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.2_2",
+    "skill": "Reading",
+    "level": "C2.2",
+    "type": "reading_mcq",
+    "question": "What should remain central according to the paper?",
+    "options": [
+      "Cognitive development",
+      "School finance",
+      "Teacher salaries",
+      "Technology"
+    ],
+    "answer": "Cognitive development",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "An analytic approach to educational policy distinguishes between what is theoretically desirable and what can realistically be implemented. A recent paper argued that cognitive development should remain central to curriculum design, while acknowledging that institutions face practical constraints. The authors also questioned whether every widely used measure was legitimate. Their conclusion was cautious: policy should be evidence-based, but evidence itself must be examined critically.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.2_3",
+    "skill": "Reading",
+    "level": "C2.2",
+    "type": "reading_mcq",
+    "question": "What do the authors question?",
+    "options": [
+      "Whether every common measure is legitimate",
+      "Whether schools exist",
+      "Whether evidence matters",
+      "Whether students can learn"
+    ],
+    "answer": "Whether every common measure is legitimate",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "An analytic approach to educational policy distinguishes between what is theoretically desirable and what can realistically be implemented. A recent paper argued that cognitive development should remain central to curriculum design, while acknowledging that institutions face practical constraints. The authors also questioned whether every widely used measure was legitimate. Their conclusion was cautious: policy should be evidence-based, but evidence itself must be examined critically.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.2_4",
+    "skill": "Reading",
+    "level": "C2.2",
+    "type": "reading_mcq",
+    "question": "What is their conclusion?",
+    "options": [
+      "Evidence should be used and examined critically",
+      "Evidence should be ignored",
+      "Policy should follow tradition",
+      "Only theory matters"
+    ],
+    "answer": "Evidence should be used and examined critically",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "An analytic approach to educational policy distinguishes between what is theoretically desirable and what can realistically be implemented. A recent paper argued that cognitive development should remain central to curriculum design, while acknowledging that institutions face practical constraints. The authors also questioned whether every widely used measure was legitimate. Their conclusion was cautious: policy should be evidence-based, but evidence itself must be examined critically.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "G_C2.3_1",
+    "skill": "Grammar",
+    "level": "C2.3",
+    "type": "grammar_mcq",
+    "question": "She could not have known; the information ___ to her only yesterday.",
+    "options": [
+      "was released",
+      "released",
+      "had released",
+      "has releasing"
+    ],
+    "answer": "was released",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.3_2",
+    "skill": "Grammar",
+    "level": "C2.3",
+    "type": "grammar_mcq",
+    "question": "The committee recommended that the policy ___ immediately.",
+    "options": [
+      "be reviewed",
+      "is reviewed",
+      "was reviewed",
+      "reviewed"
+    ],
+    "answer": "be reviewed",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.3_3",
+    "skill": "Grammar",
+    "level": "C2.3",
+    "type": "grammar_mcq",
+    "question": "Much of what was reported ___ later found to be inaccurate.",
+    "options": [
+      "was",
+      "were",
+      "have been",
+      "are"
+    ],
+    "answer": "was",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "G_C2.3_4",
+    "skill": "Grammar",
+    "level": "C2.3",
+    "type": "grammar_mcq",
+    "question": "The evidence is too limited to justify ___ conclusion.",
+    "options": [
+      "such a",
+      "such",
+      "so a",
+      "a so"
+    ],
+    "answer": "such a",
+    "explanation": "Choose the option that forms the grammatically correct sentence.",
+    "passage": "",
+    "source": "English Grammar in Use / Essential Grammar in Use topic band"
+  },
+  {
+    "id": "V_C2.3_1",
+    "skill": "Vocabulary",
+    "level": "C2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"the ability to understand another person’s feelings\"?",
+    "options": [
+      "empathy",
+      "rectify",
+      "dearth",
+      "incredulous"
+    ],
+    "answer": "empathy",
+    "explanation": "empathy means the ability to understand another person’s feelings.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.3_2",
+    "skill": "Vocabulary",
+    "level": "C2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"correct something that is wrong\"?",
+    "options": [
+      "rectify",
+      "empathy",
+      "dearth",
+      "incredulous"
+    ],
+    "answer": "rectify",
+    "explanation": "rectify means correct something that is wrong.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.3_3",
+    "skill": "Vocabulary",
+    "level": "C2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"a serious lack of something\"?",
+    "options": [
+      "dearth",
+      "empathy",
+      "rectify",
+      "incredulous"
+    ],
+    "answer": "dearth",
+    "explanation": "dearth means a serious lack of something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "V_C2.3_4",
+    "skill": "Vocabulary",
+    "level": "C2.3",
+    "type": "vocab_mcq",
+    "question": "Which word best matches this meaning: \"unable or unwilling to believe something\"?",
+    "options": [
+      "incredulous",
+      "empathy",
+      "rectify",
+      "dearth"
+    ],
+    "answer": "incredulous",
+    "explanation": "incredulous means unable or unwilling to believe something.",
+    "passage": "",
+    "source": "4000 Essential English Words source band"
+  },
+  {
+    "id": "R_C2.3_1",
+    "skill": "Reading",
+    "level": "C2.3",
+    "type": "reading_mcq",
+    "question": "What problem affected the inquiry?",
+    "options": [
+      "A shortage of reliable evidence",
+      "Too many officials",
+      "A lack of public interest",
+      "A completed data review"
+    ],
+    "answer": "A shortage of reliable evidence",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A shortage of reliable evidence can produce reactions that are understandable but nevertheless misguided. In one inquiry, public officials were incredulous when early findings contradicted their expectations. The review panel did not dismiss their concerns; instead, it sought to rectify weaknesses in the data and requested additional independent checks. Only after the evidence had been strengthened did the panel issue a final assessment.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.3_2",
+    "skill": "Reading",
+    "level": "C2.3",
+    "type": "reading_mcq",
+    "question": "How did officials react?",
+    "options": [
+      "They were incredulous",
+      "They were indifferent",
+      "They were enthusiastic",
+      "They immediately agreed"
+    ],
+    "answer": "They were incredulous",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A shortage of reliable evidence can produce reactions that are understandable but nevertheless misguided. In one inquiry, public officials were incredulous when early findings contradicted their expectations. The review panel did not dismiss their concerns; instead, it sought to rectify weaknesses in the data and requested additional independent checks. Only after the evidence had been strengthened did the panel issue a final assessment.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.3_3",
+    "skill": "Reading",
+    "level": "C2.3",
+    "type": "reading_mcq",
+    "question": "What did the panel do?",
+    "options": [
+      "It sought to correct weaknesses and requested more checks",
+      "It ended the inquiry",
+      "It ignored the data",
+      "It published the first findings"
+    ],
+    "answer": "It sought to correct weaknesses and requested more checks",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A shortage of reliable evidence can produce reactions that are understandable but nevertheless misguided. In one inquiry, public officials were incredulous when early findings contradicted their expectations. The review panel did not dismiss their concerns; instead, it sought to rectify weaknesses in the data and requested additional independent checks. Only after the evidence had been strengthened did the panel issue a final assessment.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  },
+  {
+    "id": "R_C2.3_4",
+    "skill": "Reading",
+    "level": "C2.3",
+    "type": "reading_mcq",
+    "question": "When did the panel issue a final assessment?",
+    "options": [
+      "After the evidence was strengthened",
+      "Before reviewing the data",
+      "Immediately after the first finding",
+      "Before the officials reacted"
+    ],
+    "answer": "After the evidence was strengthened",
+    "explanation": "The answer is supported by the passage.",
+    "passage": "A shortage of reliable evidence can produce reactions that are understandable but nevertheless misguided. In one inquiry, public officials were incredulous when early findings contradicted their expectations. The review panel did not dismiss their concerns; instead, it sought to rectify weaknesses in the data and requested additional independent checks. Only after the evidence had been strengthened did the panel issue a final assessment.",
+    "source": "Original passage aligned to source vocabulary/grammar band"
+  }
+]
