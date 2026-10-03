@@ -85,7 +85,8 @@ def test():
     st.caption(f"Question {len(S.history)+1} of up to {sc.MAX_QUESTIONS} · {q['skill']}")
     if q["passage"]:st.markdown(f"<div class='passage'>{html.escape(q['passage'])}</div>",unsafe_allow_html=True)
     st.subheader(q["question"])
-    choice=st.radio("Answer",random.sample(q["options"],4),index=None,key=f"q{len(S.history)}",label_visibility="collapsed")
+    opts=[q.get(f"option_{c}", "") for c in "abcd"]
+    choice=st.radio("Answer",random.sample(opts,4),index=None,key=f"q{len(S.history)}",label_visibility="collapsed")
     if st.button("Confirm answer",type="primary",disabled=choice is None,use_container_width=True):
         S.history.append(dict(id=q["id"],skill=q["skill"],level=q["level"],correct=choice==q["answer"]))
         S.cur.pop(0)
